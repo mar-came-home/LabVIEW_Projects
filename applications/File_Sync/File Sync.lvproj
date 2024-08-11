@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="22308000">
+<Project Type="Project" LVVersion="23008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -13,7 +13,11 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="SubVIs" Type="Folder">
 			<Item Name="GetAllFiles.vi" Type="VI" URL="../SubVIs/GetAllFiles.vi"/>
+			<Item Name="GetAllFolderContents.vi" Type="VI" URL="../SubVIs/GetAllFolderContents.vi"/>
 			<Item Name="GetDiffFiles.vi" Type="VI" URL="../SubVIs/GetDiffFiles.vi"/>
+		</Item>
+		<Item Name="TypeDefs" Type="Folder">
+			<Item Name="FolderContents.ctl" Type="VI" URL="../TypeDefs/FolderContents.ctl"/>
 		</Item>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
