@@ -1,0 +1,7 @@
+Dev notes
+* Rename folders:
+    - Remove all caps
+    - Move prefix "The" to end (sortable)
+    - Normalize the use of " - " to "- "
+    - Check year start to year end to remove "-present)"
+* Check all folders for Annuals or combined collections
