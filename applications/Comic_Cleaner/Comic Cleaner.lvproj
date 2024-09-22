@@ -37,12 +37,10 @@
 		<Item Name="Comic Cleaner.ini" Type="Document" URL="../Comic Cleaner.ini"/>
 		<Item Name="ComicCleaner.vi" Type="VI" URL="../ComicCleaner.vi"/>
 		<Item Name="ComicCleaner_SM.vi" Type="VI" URL="../ComicCleaner_SM.vi"/>
+		<Item Name="ConvertWEBPtoJPG.vi" Type="VI" URL="../../../lib/ImageTools/ConvertWEBPtoJPG.vi"/>
 		<Item Name="FindMissingIssues.vi" Type="VI" URL="../../../lib/File_Handling/FindMissingIssues.vi"/>
 		<Item Name="GetAllFolderContents.vi" Type="VI" URL="../../File_Sync/SubVIs/GetAllFolderContents.vi"/>
 		<Item Name="Hidden Tags.ini" Type="Document" URL="../Hidden Tags.ini"/>
-		<Item Name="Package Dependencies" Type="IIO Ladder Diagram">
-			<Property Name="NI.SortType" Type="Int">0</Property>
-		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="openg_array.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/openg_array.lvlib"/>
