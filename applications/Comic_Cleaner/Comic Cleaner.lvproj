@@ -128,6 +128,7 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="CalcCRC.vi" Type="VI" URL="../../../lib/File_Handling/CalcCRC.vi"/>
+			<Item Name="ClearWorkingDirectory.vi" Type="VI" URL="../../../lib/File_Handling/ClearWorkingDirectory.vi"/>
 			<Item Name="Find out of Family.vi" Type="VI" URL="../SubVI&apos;s/Find out of Family.vi"/>
 			<Item Name="FolderContents.ctl" Type="VI" URL="../../File_Sync/TypeDefs/FolderContents.ctl"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
