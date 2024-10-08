@@ -14,7 +14,12 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="SubVI&apos;s" Type="Folder">
 			<Item Name="BufferComicNameNumber.vi" Type="VI" URL="../../../lib/StringTools/BufferComicNameNumber.vi"/>
+			<Item Name="filter.clz_series.vi" Type="VI" URL="../SubVI&apos;s/filter.clz_series.vi"/>
 			<Item Name="generate_footer.vi" Type="VI" URL="../SubVI&apos;s/generate_footer.vi"/>
+			<Item Name="GenerateCLZIssuesMap.vi" Type="VI" URL="../SubVI&apos;s/GenerateCLZIssuesMap.vi"/>
+			<Item Name="GenerateCLZSeriesMap.vi" Type="VI" URL="../SubVI&apos;s/GenerateCLZSeriesMap.vi"/>
+			<Item Name="GenerateMarvelIssuesMap.vi" Type="VI" URL="../SubVI&apos;s/GenerateMarvelIssuesMap.vi"/>
+			<Item Name="GenerateMarvelSeriesMap.vi" Type="VI" URL="../SubVI&apos;s/GenerateMarvelSeriesMap.vi"/>
 			<Item Name="GET.comics.month.vi" Type="VI" URL="../SubVI&apos;s/GET.comics.month.vi"/>
 			<Item Name="GET.comics.series.vi" Type="VI" URL="../SubVI&apos;s/GET.comics.series.vi"/>
 			<Item Name="GET.series.by_id.vi" Type="VI" URL="../SubVI&apos;s/GET.series.by_id.vi"/>
@@ -70,12 +75,7 @@
 		<Item Name="CreateSeriesMapFile.vi" Type="VI" URL="../SubVI&apos;s/CreateSeriesMapFile.vi"/>
 		<Item Name="DevNotes.txt" Type="Document" URL="../DevNotes.txt"/>
 		<Item Name="FileNamer_SM.vi" Type="VI" URL="../FileNamer_SM.vi"/>
-		<Item Name="filter.clz_series.vi" Type="VI" URL="../SubVI&apos;s/filter.clz_series.vi"/>
 		<Item Name="filter.marvel_series.vi" Type="VI" URL="../SubVI&apos;s/filter.marvel_series.vi"/>
-		<Item Name="GenerateCLZIssuesMap.vi" Type="VI" URL="../SubVI&apos;s/GenerateCLZIssuesMap.vi"/>
-		<Item Name="GenerateCLZSeriesMap.vi" Type="VI" URL="../SubVI&apos;s/GenerateCLZSeriesMap.vi"/>
-		<Item Name="GenerateMarvelIssuesMap.vi" Type="VI" URL="../SubVI&apos;s/GenerateMarvelIssuesMap.vi"/>
-		<Item Name="GenerateMarvelSeriesMap.vi" Type="VI" URL="../SubVI&apos;s/GenerateMarvelSeriesMap.vi"/>
 		<Item Name="GET.comics.upcoming.vi" Type="VI" URL="../SubVI&apos;s/GET.comics.upcoming.vi"/>
 		<Item Name="GetMarvel.lvclass" Type="LVClass" URL="../GetMarvel_class/GetMarvel.lvclass"/>
 		<Item Name="GetUpcomingComics.vi" Type="VI" URL="../SubVI&apos;s/GetUpcomingComics.vi"/>
