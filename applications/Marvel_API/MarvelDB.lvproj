@@ -59,6 +59,7 @@
 			<Item Name="ChangeAllSeriesFileNames.vi" Type="VI" URL="../SubVI&apos;s/ChangeAllSeriesFileNames.vi"/>
 			<Item Name="CreateFolderFromJSON.vi" Type="VI" URL="../SubVI&apos;s/CreateFolderFromJSON.vi"/>
 			<Item Name="Find Duplicate Series.vi" Type="VI" URL="../Find Duplicate Series.vi"/>
+			<Item Name="find.folders.with.missing.issues.vi" Type="VI" URL="../SubVI&apos;s/find.folders.with.missing.issues.vi"/>
 			<Item Name="FindAnnuals.vi" Type="VI" URL="../FindAnnuals.vi"/>
 			<Item Name="FindMissingIssues.vi" Type="VI" URL="../../../lib/File_Handling/FindMissingIssues.vi"/>
 			<Item Name="GenerateUpcomingReport.vi" Type="VI" URL="../GenerateUpcomingReport.vi"/>
