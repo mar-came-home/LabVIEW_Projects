@@ -76,6 +76,7 @@
 		<Item Name="DevNotes.txt" Type="Document" URL="../DevNotes.txt"/>
 		<Item Name="FileNamer_SM.vi" Type="VI" URL="../FileNamer_SM.vi"/>
 		<Item Name="filter.marvel_series.vi" Type="VI" URL="../SubVI&apos;s/filter.marvel_series.vi"/>
+		<Item Name="find.folders.with.dups.vi" Type="VI" URL="../SubVI&apos;s/find.folders.with.dups.vi"/>
 		<Item Name="GET.comics.upcoming.vi" Type="VI" URL="../SubVI&apos;s/GET.comics.upcoming.vi"/>
 		<Item Name="GetMarvel.lvclass" Type="LVClass" URL="../GetMarvel_class/GetMarvel.lvclass"/>
 		<Item Name="GetUpcomingComics.vi" Type="VI" URL="../SubVI&apos;s/GetUpcomingComics.vi"/>
@@ -289,6 +290,7 @@
 			<Item Name="Cruft Dialog.vi" Type="VI" URL="../../Comic_Cleaner/SubVI&apos;s/Cruft Dialog.vi"/>
 			<Item Name="ExpandComic.vi" Type="VI" URL="../../Comic_Cleaner/SubVI&apos;s/ExpandComic.vi"/>
 			<Item Name="Find out of Family.vi" Type="VI" URL="../../Comic_Cleaner/SubVI&apos;s/Find out of Family.vi"/>
+			<Item Name="FindDuplicateIssues.vi" Type="VI" URL="../../../lib/File_Handling/FindDuplicateIssues.vi"/>
 			<Item Name="GenerateAlphabetArray.vi" Type="VI" URL="../../../lib/StringTools/GenerateAlphabetArray.vi"/>
 			<Item Name="Known Tags.vi" Type="VI" URL="../../Comic_Cleaner/FGV&apos;s/Known Tags.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
