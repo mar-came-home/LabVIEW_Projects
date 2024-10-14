@@ -20,7 +20,7 @@
 			<Item Name="Rename.vi" Type="VI" URL="../SubVIs/Rename.vi"/>
 		</Item>
 		<Item Name="ErrorHandler.vi" Type="VI" URL="../SubVIs/ErrorHandler.vi"/>
-		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
+		<Item Name="File Namer.vi" Type="VI" URL="../File Namer.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="openg_array.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/openg_array.lvlib"/>
