@@ -5,5 +5,6 @@
 .comicvine.gamespot.com	TRUE	/	FALSE	1760705006	xcab	3-0
 .gamespot.com	TRUE	/	TRUE	0	Geo	{%22region%22:%22TX%22%2C%22city%22:%22richardson%22%2C%22country_name%22:%22united states%22%2C%22country%22:%22US%22%2C%22continent%22:%22NA%22}
 #HttpOnly_comicvine.gamespot.com	FALSE	/	FALSE	1731851005	device_view	full
-#HttpOnly_comicvine.gamespot.com	FALSE	/	FALSE	1730749773	sptg	%5B%5D
-#HttpOnly_.comicvine.gamespot.com	TRUE	/	FALSE	0	satcv	2724e333d7f3d12f16b951c412359d37
+#HttpOnly_comicvine.gamespot.com	FALSE	/	FALSE	1731098800	sptg	%5B%5D
+#HttpOnly_.comicvine.gamespot.com	TRUE	/	FALSE	0	satcv	7c4beb6b44765b4028ee38cccb73b7b1
+#HttpOnly_.comicvine.gamespot.com	TRUE	/	FALSE	1729972496	xcr	us
