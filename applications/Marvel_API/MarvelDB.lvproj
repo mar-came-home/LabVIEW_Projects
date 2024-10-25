@@ -32,6 +32,7 @@
 			<Item Name="parse.printPrice.vi" Type="VI" URL="../SubVI&apos;s/parse.printPrice.vi"/>
 			<Item Name="parse.series_id.from_comic.vi" Type="VI" URL="../SubVI&apos;s/parse.series_id.from_comic.vi"/>
 			<Item Name="parse.series_reply.vi" Type="VI" URL="../SubVI&apos;s/parse.series_reply.vi"/>
+			<Item Name="ParseIssueNumber.vi" Type="VI" URL="../../../lib/StringTools/ParseIssueNumber.vi"/>
 			<Item Name="ParseSeriesID.vi" Type="VI" URL="../SubVI&apos;s/ParseSeriesID.vi"/>
 			<Item Name="remove.invalid.chars.vi" Type="VI" URL="../../../lib/File_Handling/remove.invalid.chars.vi"/>
 			<Item Name="rename.single.title.vi" Type="VI" URL="../SubVI&apos;s/rename.single.title.vi"/>
@@ -59,6 +60,7 @@
 			<Item Name="ChangeAllSeriesFileNames.vi" Type="VI" URL="../SubVI&apos;s/ChangeAllSeriesFileNames.vi"/>
 			<Item Name="CreateFolderFromJSON.vi" Type="VI" URL="../SubVI&apos;s/CreateFolderFromJSON.vi"/>
 			<Item Name="Find Duplicate Series.vi" Type="VI" URL="../Find Duplicate Series.vi"/>
+			<Item Name="find.folders.with.dups.vi" Type="VI" URL="../SubVI&apos;s/find.folders.with.dups.vi"/>
 			<Item Name="find.folders.with.missing.issues.vi" Type="VI" URL="../SubVI&apos;s/find.folders.with.missing.issues.vi"/>
 			<Item Name="FindAnnuals.vi" Type="VI" URL="../FindAnnuals.vi"/>
 			<Item Name="FindMissingIssues.vi" Type="VI" URL="../../../lib/File_Handling/FindMissingIssues.vi"/>
@@ -78,15 +80,13 @@
 		<Item Name="dialog.change.string.vi" Type="VI" URL="../../../lib/Dialog/dialog.change.string.vi"/>
 		<Item Name="FileNamer_SM.vi" Type="VI" URL="../FileNamer_SM.vi"/>
 		<Item Name="filter.marvel_series.vi" Type="VI" URL="../SubVI&apos;s/filter.marvel_series.vi"/>
-		<Item Name="find.folders.with.dups.vi" Type="VI" URL="../SubVI&apos;s/find.folders.with.dups.vi"/>
 		<Item Name="GET.comics.upcoming.vi" Type="VI" URL="../SubVI&apos;s/GET.comics.upcoming.vi"/>
 		<Item Name="GetMarvel.lvclass" Type="LVClass" URL="../GetMarvel_class/GetMarvel.lvclass"/>
 		<Item Name="GetUpcomingComics.vi" Type="VI" URL="../SubVI&apos;s/GetUpcomingComics.vi"/>
 		<Item Name="Parse &amp; Save Comics Reply File.vi" Type="VI" URL="../Parse &amp; Save Comics Reply File.vi"/>
-		<Item Name="ParseIssueNumber.vi" Type="VI" URL="../../../lib/StringTools/ParseIssueNumber.vi"/>
-		<Item Name="PriceToDBL.vi" Type="VI" URL="../../../lib/StringTools/PriceToDBL.vi"/>
-		<Item Name="SeriesStringGenerator.vi" Type="VI" URL="../../../lib/StringTools/SeriesStringGenerator.vi"/>
-		<Item Name="StandardizeComicTitle.vi" Type="VI" URL="../../../lib/StringTools/StandardizeComicTitle.vi"/>
+		<Item Name="parse.clz.report.vi" Type="VI" URL="../SubVI&apos;s/parse.clz.report.vi"/>
+		<Item Name="parse.series.vi" Type="VI" URL="../SubVI&apos;s/parse.series.vi"/>
+		<Item Name="series.get.vi" Type="VI" URL="../../MyComic.org_API/series.get.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="MD5 F function__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/md5/md5.llb/MD5 F function__ogtk.vi"/>
@@ -108,7 +108,7 @@
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
-				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
+				<Item Name="Add State(s) to Queue__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__jki_lib_state_machine.vi"/>
 				<Item Name="Bit-array To Byte-array.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Bit-array To Byte-array.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check if Data Type has User-Definable String__JKI EasyXML.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/EasyXML/JKI_EasyXML.llb/Check if Data Type has User-Definable String__JKI EasyXML.vi"/>
@@ -222,7 +222,7 @@
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
-				<Item Name="Parse State Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Parse State Queue__JKI_lib_State_Machine.vi"/>
+				<Item Name="Parse State Queue__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Parse State Queue__jki_lib_state_machine.vi"/>
 				<Item Name="Parse XML dateTime String__JKI EasyXML.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/EasyXML/JKI_EasyXML.llb/Parse XML dateTime String__JKI EasyXML.vi"/>
 				<Item Name="Parse XML for Tags__JKI EasyXML.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/EasyXML/JKI_EasyXML.llb/Parse XML for Tags__JKI EasyXML.vi"/>
 				<Item Name="Parse XML__JKI EasyXML.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/EasyXML/JKI_EasyXML.llb/Parse XML__JKI EasyXML.vi"/>
@@ -300,12 +300,15 @@
 			<Item Name="Find out of Family.vi" Type="VI" URL="../../Comic_Cleaner/SubVI&apos;s/Find out of Family.vi"/>
 			<Item Name="FindDuplicateIssues.vi" Type="VI" URL="../../../lib/File_Handling/FindDuplicateIssues.vi"/>
 			<Item Name="GenerateAlphabetArray.vi" Type="VI" URL="../../../lib/StringTools/GenerateAlphabetArray.vi"/>
+			<Item Name="GetSubString.vi" Type="VI" URL="../../../lib/StringTools/GetSubString.vi"/>
 			<Item Name="Known Tags.vi" Type="VI" URL="../../Comic_Cleaner/FGV&apos;s/Known Tags.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="MainStates.ctl" Type="VI" URL="../../File_Namer/Controls/MainStates.ctl"/>
 			<Item Name="MakeSortable.vi" Type="VI" URL="../../../lib/StringTools/MakeSortable.vi"/>
 			<Item Name="MoveFilesRecursively.vi" Type="VI" URL="../../../lib/File_Handling/MoveFilesRecursively.vi"/>
+			<Item Name="parse.clz.characters.vi" Type="VI" URL="../SubVI&apos;s/parse.clz.characters.vi"/>
 			<Item Name="PathToQuotedString.vi" Type="VI" URL="../../../lib/File_Handling/PathToQuotedString.vi"/>
+			<Item Name="PriceToDBL.vi" Type="VI" URL="../../../lib/StringTools/PriceToDBL.vi"/>
 			<Item Name="Read Folder.vi" Type="VI" URL="../../Comic_Cleaner/SubVI&apos;s/Read Folder.vi"/>
 			<Item Name="Remove Hidden Tags.vi" Type="VI" URL="../../Comic_Cleaner/SubVI&apos;s/Remove Hidden Tags.vi"/>
 			<Item Name="Remove Known.vi" Type="VI" URL="../../Comic_Cleaner/SubVI&apos;s/Remove Known.vi"/>
@@ -313,7 +316,9 @@
 			<Item Name="RemoveUnderscores.vi" Type="VI" URL="../../File_Namer/SubVIs/RemoveUnderscores.vi"/>
 			<Item Name="Rename.vi" Type="VI" URL="../../File_Namer/SubVIs/Rename.vi"/>
 			<Item Name="ReplaceDots.vi" Type="VI" URL="../../../lib/File_Handling/ReplaceDots.vi"/>
+			<Item Name="SeriesStringGenerator.vi" Type="VI" URL="../../../lib/StringTools/SeriesStringGenerator.vi"/>
 			<Item Name="Set Status.vi" Type="VI" URL="../../Comic_Cleaner/FGV&apos;s/Set Status.vi"/>
+			<Item Name="StandardizeComicTitle.vi" Type="VI" URL="../../../lib/StringTools/StandardizeComicTitle.vi"/>
 			<Item Name="Tag Cmd.ctl" Type="VI" URL="../../Comic_Cleaner/TypeDefs/Tag Cmd.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
