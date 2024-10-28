@@ -62,18 +62,20 @@
 			<Item Name="web scraper to API converter.vi" Type="VI" URL="../class_testers/web scraper to API converter.vi"/>
 			<Item Name="comic_crawler_tester.vi" Type="VI" URL="../class_testers/comic_crawler_tester.vi"/>
 		</Item>
+		<Item Name="WebScraper" Type="Folder">
+			<Item Name="comic_class.lvclass" Type="LVClass" URL="../comic_class/comic_class.lvclass"/>
+			<Item Name="issue_class.lvclass" Type="LVClass" URL="../issue_class/issue_class.lvclass"/>
+			<Item Name="series_class.lvclass" Type="LVClass" URL="../series_class/series_class.lvclass"/>
+		</Item>
 		<Item Name="Main Comic Manager.vi" Type="VI" URL="../Main Comic Manager.vi"/>
-		<Item Name="CleanWebCharacters.vi" Type="VI" URL="../../../lib/StringTools/CleanWebCharacters.vi"/>
-		<Item Name="comic_class.lvclass" Type="LVClass" URL="../comic_class/comic_class.lvclass"/>
 		<Item Name="comic_crawler.lvclass" Type="LVClass" URL="../comic_crawler/comic_crawler.lvclass"/>
 		<Item Name="ComicVine_manager.lvclass" Type="LVClass" URL="../ComicVine_manager/ComicVine_manager.lvclass"/>
 		<Item Name="Get all issues from CV.vi" Type="VI" URL="../class_testers/Get all issues from CV.vi"/>
 		<Item Name="GET_ALL_ISSUES.vi" Type="VI" URL="../RESTful_calls/GET_ALL_ISSUES.vi"/>
 		<Item Name="GET_issues_by_ids.vi" Type="VI" URL="../RESTful_calls/GET_issues_by_ids.vi"/>
-		<Item Name="issue_class.lvclass" Type="LVClass" URL="../issue_class/issue_class.lvclass"/>
 		<Item Name="load.jsons.vi" Type="VI" URL="../load.jsons.vi"/>
-		<Item Name="series_class.lvclass" Type="LVClass" URL="../series_class/series_class.lvclass"/>
 		<Item Name="sort.volume.issues.vi" Type="VI" URL="../subvis/sort.volume.issues.vi"/>
+		<Item Name="build.key.maps.vi" Type="VI" URL="../subvis/build.key.maps.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="openg_array.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/openg_array.lvlib"/>
@@ -179,6 +181,7 @@
 				<Item Name="WebView2 Control.xctl" Type="XControl" URL="/&lt;vilib&gt;/sklein/WebView2/Webview2 Control/WebView2 Control.xctl"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
+				<Item Name="Is Value Changed.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Is Value Changed.vim"/>
 			</Item>
 			<Item Name="delta_time.vi" Type="VI" URL="../../../../lab/Encoding Lab/SupportVIs/delta_time.vi"/>
 			<Item Name="GetSubString.vi" Type="VI" URL="../../../lib/StringTools/GetSubString.vi"/>
@@ -191,6 +194,7 @@
 			<Item Name="System.Web.Extensions" Type="Document" URL="System.Web.Extensions">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="CleanWebCharacters.vi" Type="VI" URL="../../../lib/StringTools/CleanWebCharacters.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
