@@ -3,6 +3,7 @@
 	<Property Name="NI.LV.All.SaveVersion" Type="Str">24.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="My Computer" Type="My Computer">
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -12,6 +13,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="ComicVine Manager" Type="Folder"/>
 		<Item Name="definitions" Type="Folder">
 			<Item Name="character.ctl" Type="VI" URL="../definitions/character.ctl"/>
 			<Item Name="comicvine_character.ctl" Type="VI" URL="../definitions/comicvine_character.ctl"/>
@@ -44,9 +46,11 @@
 			<Item Name="GET_volumes_by_publisher.vi" Type="VI" URL="../RESTful_calls/GET_volumes_by_publisher.vi"/>
 			<Item Name="Open_RESTful_connection.vi" Type="VI" URL="../RESTful_calls/Open_RESTful_connection.vi"/>
 			<Item Name="read.issue_ids.from.volume.vi" Type="VI" URL="../RESTful_calls/read.issue_ids.from.volume.vi"/>
+			<Item Name="create.volume.filename.vi" Type="VI" URL="../RESTful_calls/create.volume.filename.vi"/>
 		</Item>
 		<Item Name="SQLite" Type="Folder"/>
 		<Item Name="subVI&apos;s" Type="Folder">
+			<Item Name="check.cv_vols.last_modified.vi" Type="VI" URL="../subvis/check.cv_vols.last_modified.vi"/>
 			<Item Name="comicvine.to.local_issue.vi" Type="VI" URL="../subvis/comicvine.to.local_issue.vi"/>
 			<Item Name="comicvine.to.local_volume.vi" Type="VI" URL="../subvis/comicvine.to.local_volume.vi"/>
 		</Item>
@@ -55,11 +59,14 @@
 			<Item Name="issue_parser_tester.vi" Type="VI" URL="../class_testers/issue_parser_tester.vi"/>
 			<Item Name="series_parser_tester.vi" Type="VI" URL="../class_testers/series_parser_tester.vi"/>
 			<Item Name="top_level.vi" Type="VI" URL="../class_testers/top_level.vi"/>
-			<Item Name="volume_viewer.vi" Type="VI" URL="../class_testers/volume_viewer.vi"/>
 			<Item Name="web scraper to API converter.vi" Type="VI" URL="../class_testers/web scraper to API converter.vi"/>
+			<Item Name="comic_crawler_tester.vi" Type="VI" URL="../class_testers/comic_crawler_tester.vi"/>
 		</Item>
+		<Item Name="Main Comic Manager.vi" Type="VI" URL="../Main Comic Manager.vi"/>
 		<Item Name="CleanWebCharacters.vi" Type="VI" URL="../../../lib/StringTools/CleanWebCharacters.vi"/>
 		<Item Name="comic_class.lvclass" Type="LVClass" URL="../comic_class/comic_class.lvclass"/>
+		<Item Name="comic_crawler.lvclass" Type="LVClass" URL="../comic_crawler/comic_crawler.lvclass"/>
+		<Item Name="ComicVine_manager.lvclass" Type="LVClass" URL="../ComicVine_manager/ComicVine_manager.lvclass"/>
 		<Item Name="Get all issues from CV.vi" Type="VI" URL="../class_testers/Get all issues from CV.vi"/>
 		<Item Name="GET_ALL_ISSUES.vi" Type="VI" URL="../RESTful_calls/GET_ALL_ISSUES.vi"/>
 		<Item Name="GET_issues_by_ids.vi" Type="VI" URL="../RESTful_calls/GET_issues_by_ids.vi"/>
@@ -77,6 +84,7 @@
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name=".NET Object to Variant.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/dotnet.llb/.NET Object to Variant.vi"/>
+				<Item Name="2a8ab48044d2601e" Type="VI" URL="/&lt;vilib&gt;/sklein/WebView2/Libs/2a8ab48044d2601e"/>
 				<Item Name="Add State(s) to Queue__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__jki_lib_state_machine.vi"/>
 				<Item Name="Append Error Details__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Append Error Details__jki_lib_state_machine.vi"/>
 				<Item Name="Build State String with Arguments__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Build State String with Arguments__jki_lib_state_machine.vi"/>
@@ -130,7 +138,7 @@
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
-				<Item Name="lvwebclient_64.dll" Type="Document" URL="/&lt;vilib&gt;/NI/Advanced HTTP Client/lvwebclient_64.dll"/>
+				<Item Name="lvwebclient_32.dll" Type="Document" URL="/&lt;vilib&gt;/NI/Advanced HTTP Client/lvwebclient_32.dll"/>
 				<Item Name="Microsoft.Web.WebView2.Core.dll" Type="Document" URL="/&lt;vilib&gt;/sklein/WebView2/Libs/Microsoft.Web.WebView2.Core.dll"/>
 				<Item Name="Microsoft.Web.WebView2.WinForms.dll" Type="Document" URL="/&lt;vilib&gt;/sklein/WebView2/Libs/Microsoft.Web.WebView2.WinForms.dll"/>
 				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
