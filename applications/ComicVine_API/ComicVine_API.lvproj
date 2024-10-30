@@ -53,7 +53,8 @@
 		<Item Name="Graphics" Type="Folder">
 			<Item Name="graphic_tester.vi" Type="VI" URL="../graphics/graphic_tester.vi"/>
 			<Item Name="sort.volumes.vi" Type="VI" URL="../graphics/sort.volumes.vi"/>
-			<Item Name="build.volume.data.vi" Type="VI" URL="../graphics/build.volume.data.vi"/>
+			<Item Name="filter.volume.data.vi" Type="VI" URL="../graphics/filter.volume.data.vi"/>
+			<Item Name="read.volume.map.vi" Type="VI" URL="../graphics/read.volume.map.vi"/>
 		</Item>
 		<Item Name="RESTful vis" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
@@ -89,11 +90,11 @@
 			<Item Name="comicvine.to.local_storyArc.vi" Type="VI" URL="../subvis/comicvine.to.local_storyArc.vi"/>
 			<Item Name="comicvine.to.local_team.vi" Type="VI" URL="../subvis/comicvine.to.local_team.vi"/>
 			<Item Name="comicvine.to.local_volume.vi" Type="VI" URL="../subvis/comicvine.to.local_volume.vi"/>
+			<Item Name="create.volume.index.vi" Type="VI" URL="../subvis/create.volume.index.vi"/>
 			<Item Name="filter.teams.and.chars.per.volume.vi" Type="VI" URL="../subvis/filter.teams.and.chars.per.volume.vi"/>
 			<Item Name="open.local.issue.file.vi" Type="VI" URL="../subvis/open.local.issue.file.vi"/>
 			<Item Name="open.local.volume.file.vi" Type="VI" URL="../subvis/open.local.volume.file.vi"/>
 			<Item Name="sort.volume.issues.vi" Type="VI" URL="../subvis/sort.volume.issues.vi"/>
-			<Item Name="volume.indexer.vi" Type="VI" URL="../subvis/volume.indexer.vi"/>
 		</Item>
 		<Item Name="testers" Type="Folder">
 			<Item Name="Downloader.vi" Type="VI" URL="../Downloader.vi"/>
@@ -111,6 +112,7 @@
 		<Item Name="Main Comic Manager.vi" Type="VI" URL="../Main Comic Manager.vi"/>
 		<Item Name="Get all issues from CV.vi" Type="VI" URL="../class_testers/Get all issues from CV.vi"/>
 		<Item Name="load.jsons.vi" Type="VI" URL="../load.jsons.vi"/>
+		<Item Name="volume.index--cluster.ctl" Type="VI" URL="../definitions/volume.index--cluster.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="openg_array.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/openg_array.lvlib"/>
@@ -223,10 +225,10 @@
 				<Item Name="JDP Utility.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/JDP Utility.lvlib"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="UNIXPathStringToPath.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/CFURL.llb/UNIXPathStringToPath.vi"/>
-				<Item Name="lvwebclient_32.dll" Type="Document" URL="/&lt;vilib&gt;/NI/Advanced HTTP Client/lvwebclient_32.dll"/>
 				<Item Name="Set Pen State.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Set Pen State.vi"/>
 				<Item Name="Draw Rectangle.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Rectangle.vi"/>
 				<Item Name="LVPoint32TypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPoint32TypeDef.ctl"/>
+				<Item Name="lvwebclient_64.dll" Type="Document" URL="/&lt;vilib&gt;/NI/Advanced HTTP Client/lvwebclient_64.dll"/>
 			</Item>
 			<Item Name="delta_time.vi" Type="VI" URL="../../../../lab/Encoding Lab/SupportVIs/delta_time.vi"/>
 			<Item Name="GetSubString.vi" Type="VI" URL="../../../lib/StringTools/GetSubString.vi"/>
