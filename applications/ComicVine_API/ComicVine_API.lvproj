@@ -50,6 +50,11 @@
 			<Item Name="team.ctl" Type="VI" URL="../definitions/team.ctl"/>
 			<Item Name="thing.ctl" Type="VI" URL="../definitions/thing.ctl"/>
 		</Item>
+		<Item Name="Graphics" Type="Folder">
+			<Item Name="graphic_tester.vi" Type="VI" URL="../graphics/graphic_tester.vi"/>
+			<Item Name="sort.volumes.vi" Type="VI" URL="../graphics/sort.volumes.vi"/>
+			<Item Name="build.volume.data.vi" Type="VI" URL="../graphics/build.volume.data.vi"/>
+		</Item>
 		<Item Name="RESTful vis" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="Close_RESTful_connection.vi" Type="VI" URL="../RESTful_calls/Close_RESTful_connection.vi"/>
@@ -67,6 +72,7 @@
 			<Item Name="GET_volumes_by_publisher.vi" Type="VI" URL="../RESTful_calls/GET_volumes_by_publisher.vi"/>
 			<Item Name="Open_RESTful_connection.vi" Type="VI" URL="../RESTful_calls/Open_RESTful_connection.vi"/>
 			<Item Name="read.issue_ids.from.volume.vi" Type="VI" URL="../RESTful_calls/read.issue_ids.from.volume.vi"/>
+			<Item Name="UPDATE_volume_by_path.vi" Type="VI" URL="../RESTful_calls/UPDATE_volume_by_path.vi"/>
 		</Item>
 		<Item Name="SQLite" Type="Folder">
 			<Item Name="Execute_SQL_query.vi" Type="VI" URL="../DB_tools/Execute_SQL_query.vi"/>
@@ -87,6 +93,7 @@
 			<Item Name="open.local.issue.file.vi" Type="VI" URL="../subvis/open.local.issue.file.vi"/>
 			<Item Name="open.local.volume.file.vi" Type="VI" URL="../subvis/open.local.volume.file.vi"/>
 			<Item Name="sort.volume.issues.vi" Type="VI" URL="../subvis/sort.volume.issues.vi"/>
+			<Item Name="volume.indexer.vi" Type="VI" URL="../subvis/volume.indexer.vi"/>
 		</Item>
 		<Item Name="testers" Type="Folder">
 			<Item Name="Downloader.vi" Type="VI" URL="../Downloader.vi"/>
@@ -100,11 +107,6 @@
 			<Item Name="comic_class.lvclass" Type="LVClass" URL="../comic_class/comic_class.lvclass"/>
 			<Item Name="issue_class.lvclass" Type="LVClass" URL="../issue_class/issue_class.lvclass"/>
 			<Item Name="series_class.lvclass" Type="LVClass" URL="../series_class/series_class.lvclass"/>
-		</Item>
-		<Item Name="Graphics" Type="Folder">
-			<Item Name="graphic_tester.vi" Type="VI" URL="../graphics/graphic_tester.vi"/>
-			<Item Name="sort.volumes.vi" Type="VI" URL="../graphics/sort.volumes.vi"/>
-			<Item Name="build.volume.data.vi" Type="VI" URL="../graphics/build.volume.data.vi"/>
 		</Item>
 		<Item Name="Main Comic Manager.vi" Type="VI" URL="../Main Comic Manager.vi"/>
 		<Item Name="Get all issues from CV.vi" Type="VI" URL="../class_testers/Get all issues from CV.vi"/>
@@ -214,7 +216,6 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
 				<Item Name="Is Value Changed.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Is Value Changed.vim"/>
-				<Item Name="lvwebclient_64.dll" Type="Document" URL="/&lt;vilib&gt;/NI/Advanced HTTP Client/lvwebclient_64.dll"/>
 				<Item Name="SQLite.lvlib" Type="Library" URL="/&lt;vilib&gt;/drjdpowell/SQLite Library/SQLite.lvlib"/>
 				<Item Name="JDP Timestamp.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/Timestamp/JDP Timestamp.lvlib"/>
 				<Item Name="Command Line String To Path.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Command Line String To Path.vi"/>
@@ -222,11 +223,10 @@
 				<Item Name="JDP Utility.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/JDP Utility.lvlib"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="UNIXPathStringToPath.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/CFURL.llb/UNIXPathStringToPath.vi"/>
-				<Item Name="JSONtext LVClass Serializer.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/JDP Science/JSONtext/LVClass Serializer/JSONtext LVClass Serializer.lvclass"/>
-				<Item Name="JSONtext.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JSONtext/JSONtext.lvlib"/>
-				<Item Name="Base64 Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/Base64/Base64 Support.lvlib"/>
+				<Item Name="lvwebclient_32.dll" Type="Document" URL="/&lt;vilib&gt;/NI/Advanced HTTP Client/lvwebclient_32.dll"/>
 				<Item Name="Set Pen State.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Set Pen State.vi"/>
 				<Item Name="Draw Rectangle.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Rectangle.vi"/>
+				<Item Name="LVPoint32TypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPoint32TypeDef.ctl"/>
 			</Item>
 			<Item Name="delta_time.vi" Type="VI" URL="../../../../lab/Encoding Lab/SupportVIs/delta_time.vi"/>
 			<Item Name="GetSubString.vi" Type="VI" URL="../../../lib/StringTools/GetSubString.vi"/>
