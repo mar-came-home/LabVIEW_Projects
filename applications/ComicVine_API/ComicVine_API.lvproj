@@ -49,12 +49,19 @@
 			<Item Name="storyArc.ctl" Type="VI" URL="../definitions/storyArc.ctl"/>
 			<Item Name="team.ctl" Type="VI" URL="../definitions/team.ctl"/>
 			<Item Name="thing.ctl" Type="VI" URL="../definitions/thing.ctl"/>
+			<Item Name="volume.index--cluster.ctl" Type="VI" URL="../definitions/volume.index--cluster.ctl"/>
+			<Item Name="volume.type--enum.ctl" Type="VI" URL="../definitions/volume.type--enum.ctl"/>
 		</Item>
 		<Item Name="Graphics" Type="Folder">
+			<Item Name="definitions" Type="Folder">
+				<Item Name="volume.index.content--cluster.ctl" Type="VI" URL="../graphics/volume.index.content--cluster.ctl"/>
+				<Item Name="volume.map--cluster.ctl" Type="VI" URL="../graphics/volume.map--cluster.ctl"/>
+			</Item>
 			<Item Name="graphic_tester.vi" Type="VI" URL="../graphics/graphic_tester.vi"/>
 			<Item Name="sort.volumes.vi" Type="VI" URL="../graphics/sort.volumes.vi"/>
 			<Item Name="filter.volume.data.vi" Type="VI" URL="../graphics/filter.volume.data.vi"/>
 			<Item Name="read.volume.map.vi" Type="VI" URL="../graphics/read.volume.map.vi"/>
+			<Item Name="create.volume.index.vi" Type="VI" URL="../graphics/create.volume.index.vi"/>
 		</Item>
 		<Item Name="RESTful vis" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
@@ -71,6 +78,8 @@
 			<Item Name="GET_volume_by_id.vi" Type="VI" URL="../RESTful_calls/GET_volume_by_id.vi"/>
 			<Item Name="GET_volume_last_update.vi" Type="VI" URL="../RESTful_calls/GET_volume_last_update.vi"/>
 			<Item Name="GET_volumes_by_publisher.vi" Type="VI" URL="../RESTful_calls/GET_volumes_by_publisher.vi"/>
+			<Item Name="open.local.issue.file.vi" Type="VI" URL="../subvis/open.local.issue.file.vi"/>
+			<Item Name="open.local.volume.file.vi" Type="VI" URL="../subvis/open.local.volume.file.vi"/>
 			<Item Name="Open_RESTful_connection.vi" Type="VI" URL="../RESTful_calls/Open_RESTful_connection.vi"/>
 			<Item Name="read.issue_ids.from.volume.vi" Type="VI" URL="../RESTful_calls/read.issue_ids.from.volume.vi"/>
 			<Item Name="UPDATE_volume_by_path.vi" Type="VI" URL="../RESTful_calls/UPDATE_volume_by_path.vi"/>
@@ -83,6 +92,7 @@
 		<Item Name="subVI&apos;s" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="build.key.maps.vi" Type="VI" URL="../subvis/build.key.maps.vi"/>
+			<Item Name="build.volume.path.map" Type="VI" URL="../subvis/build.volume.path.map"/>
 			<Item Name="check.cv_vols.last_modified.vi" Type="VI" URL="../subvis/check.cv_vols.last_modified.vi"/>
 			<Item Name="comicvine.to.local_character.vi" Type="VI" URL="../subvis/comicvine.to.local_character.vi"/>
 			<Item Name="comicvine.to.local_issue.vi" Type="VI" URL="../subvis/comicvine.to.local_issue.vi"/>
@@ -90,10 +100,7 @@
 			<Item Name="comicvine.to.local_storyArc.vi" Type="VI" URL="../subvis/comicvine.to.local_storyArc.vi"/>
 			<Item Name="comicvine.to.local_team.vi" Type="VI" URL="../subvis/comicvine.to.local_team.vi"/>
 			<Item Name="comicvine.to.local_volume.vi" Type="VI" URL="../subvis/comicvine.to.local_volume.vi"/>
-			<Item Name="create.volume.index.vi" Type="VI" URL="../subvis/create.volume.index.vi"/>
 			<Item Name="filter.teams.and.chars.per.volume.vi" Type="VI" URL="../subvis/filter.teams.and.chars.per.volume.vi"/>
-			<Item Name="open.local.issue.file.vi" Type="VI" URL="../subvis/open.local.issue.file.vi"/>
-			<Item Name="open.local.volume.file.vi" Type="VI" URL="../subvis/open.local.volume.file.vi"/>
 			<Item Name="sort.volume.issues.vi" Type="VI" URL="../subvis/sort.volume.issues.vi"/>
 		</Item>
 		<Item Name="testers" Type="Folder">
@@ -103,6 +110,7 @@
 			<Item Name="top_level.vi" Type="VI" URL="../class_testers/top_level.vi"/>
 			<Item Name="web scraper to API converter.vi" Type="VI" URL="../class_testers/web scraper to API converter.vi"/>
 			<Item Name="comic_crawler_tester.vi" Type="VI" URL="../class_testers/comic_crawler_tester.vi"/>
+			<Item Name="get single issue via cv_api.vi" Type="VI" URL="../class_testers/get single issue via cv_api.vi"/>
 		</Item>
 		<Item Name="WebScraper" Type="Folder">
 			<Item Name="comic_class.lvclass" Type="LVClass" URL="../comic_class/comic_class.lvclass"/>
@@ -112,7 +120,6 @@
 		<Item Name="Main Comic Manager.vi" Type="VI" URL="../Main Comic Manager.vi"/>
 		<Item Name="Get all issues from CV.vi" Type="VI" URL="../class_testers/Get all issues from CV.vi"/>
 		<Item Name="load.jsons.vi" Type="VI" URL="../load.jsons.vi"/>
-		<Item Name="volume.index--cluster.ctl" Type="VI" URL="../definitions/volume.index--cluster.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="openg_array.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/openg_array.lvlib"/>
@@ -228,7 +235,7 @@
 				<Item Name="Set Pen State.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Set Pen State.vi"/>
 				<Item Name="Draw Rectangle.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Rectangle.vi"/>
 				<Item Name="LVPoint32TypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPoint32TypeDef.ctl"/>
-				<Item Name="lvwebclient_64.dll" Type="Document" URL="/&lt;vilib&gt;/NI/Advanced HTTP Client/lvwebclient_64.dll"/>
+				<Item Name="lvwebclient_32.dll" Type="Document" URL="/&lt;vilib&gt;/NI/Advanced HTTP Client/lvwebclient_32.dll"/>
 			</Item>
 			<Item Name="delta_time.vi" Type="VI" URL="../../../../lab/Encoding Lab/SupportVIs/delta_time.vi"/>
 			<Item Name="GetSubString.vi" Type="VI" URL="../../../lib/StringTools/GetSubString.vi"/>
