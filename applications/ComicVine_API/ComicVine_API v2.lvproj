@@ -12,6 +12,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="build.key.maps.vi" Type="VI" URL="../subvis/build.key.maps.vi"/>
 		<Item Name="comic_crawler_tester.vi" Type="VI" URL="../class_testers/comic_crawler_tester.vi"/>
 		<Item Name="graphic_tester.vi" Type="VI" URL="../graphics/graphic_tester.vi"/>
 		<Item Name="Main Comic Manager.vi" Type="VI" URL="../Main Comic Manager.vi"/>
