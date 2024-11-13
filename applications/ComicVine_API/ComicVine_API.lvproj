@@ -124,6 +124,9 @@
 		<Item Name="draw.picture.vi" Type="VI" URL="../graphics/draw.picture.vi"/>
 		<Item Name="picture.data--cluster.ctl" Type="VI" URL="../graphics/picture.data--cluster.ctl"/>
 		<Item Name="sort.by.volume.type.vi" Type="VI" URL="../graphics/sort.by.volume.type.vi"/>
+		<Item Name="apply.all.available.storeDates.vi" Type="VI" URL="../subvis/apply.all.available.storeDates.vi"/>
+		<Item Name="interpolate.issue.dates.vi" Type="VI" URL="../subvis/interpolate.issue.dates.vi"/>
+		<Item Name="LongDateString2TimeStamp.vi" Type="VI" URL="../../../lib/TimeTools/LongDateString2TimeStamp.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="openg_array.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/openg_array.lvlib"/>
@@ -247,6 +250,7 @@
 				<Item Name="JDP Utility.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/JDP Utility.lvlib"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="2a8ab48044d2601e" Type="VI" URL="/&lt;vilib&gt;/sklein/WebView2/Libs/2a8ab48044d2601e"/>
+				<Item Name="Draw Round Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Round Rect.vi"/>
 			</Item>
 			<Item Name="delta_time.vi" Type="VI" URL="../../../../lab/Encoding Lab/SupportVIs/delta_time.vi"/>
 			<Item Name="GetSubString.vi" Type="VI" URL="../../../lib/StringTools/GetSubString.vi"/>
@@ -261,6 +265,8 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="create.yearly.array.vi" Type="VI" URL="../../../lib/TimeTools/create.yearly.array.vi"/>
+			<Item Name="create.grid.vi" Type="VI" URL="../graphics/create.grid.vi"/>
+			<Item Name="inc.dec.timeframe.vi" Type="VI" URL="../graphics/inc.dec.timeframe.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
