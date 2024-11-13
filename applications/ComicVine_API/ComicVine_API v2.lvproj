@@ -14,7 +14,9 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="build.key.maps.vi" Type="VI" URL="../subvis/build.key.maps.vi"/>
 		<Item Name="comic_crawler_tester.vi" Type="VI" URL="../class_testers/comic_crawler_tester.vi"/>
+		<Item Name="create.grid.vi" Type="VI" URL="../graphics/create.grid.vi"/>
 		<Item Name="graphic_tester.vi" Type="VI" URL="../graphics/graphic_tester.vi"/>
+		<Item Name="inc.dec.timeframe.vi" Type="VI" URL="../graphics/inc.dec.timeframe.vi"/>
 		<Item Name="Main Comic Manager.vi" Type="VI" URL="../Main Comic Manager.vi"/>
 		<Item Name="Oneshot Tester.vi" Type="VI" URL="../Oneshot Tester.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
