@@ -19,6 +19,8 @@
 		<Item Name="inc.dec.timeframe.vi" Type="VI" URL="../graphics/inc.dec.timeframe.vi"/>
 		<Item Name="Main Comic Manager.vi" Type="VI" URL="../Main Comic Manager.vi"/>
 		<Item Name="Oneshot Tester.vi" Type="VI" URL="../Oneshot Tester.vi"/>
+		<Item Name="plot.issues.vi" Type="VI" URL="../graphics/plot.issues.vi"/>
+		<Item Name="volume.type.colors--cluster.ctl" Type="VI" URL="../graphics/volume.type.colors--cluster.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="openg_array.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/openg_array.lvlib"/>
@@ -45,6 +47,7 @@
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
 				<Item Name="Draw Line.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Line.vi"/>
 				<Item Name="Draw Rectangle.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Rectangle.vi"/>
+				<Item Name="Draw Round Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Round Rect.vi"/>
 				<Item Name="Draw Text at Point.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Text at Point.vi"/>
 				<Item Name="Draw Text in Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Text in Rect.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
@@ -163,6 +166,7 @@
 			<Item Name="GET_issue_by_id.vi" Type="VI" URL="../RESTful_calls/GET_issue_by_id.vi"/>
 			<Item Name="GET_volume_by_id.vi" Type="VI" URL="../RESTful_calls/GET_volume_by_id.vi"/>
 			<Item Name="GetSubString.vi" Type="VI" URL="../../../lib/StringTools/GetSubString.vi"/>
+			<Item Name="interpolate.issue.dates.vi" Type="VI" URL="../subvis/interpolate.issue.dates.vi"/>
 			<Item Name="issue_class.lvclass" Type="LVClass" URL="../issue_class/issue_class.lvclass"/>
 			<Item Name="issueInfo.ctl" Type="VI" URL="../definitions/issueInfo.ctl"/>
 			<Item Name="local_issue.ctl" Type="VI" URL="../definitions/local_issue.ctl"/>
