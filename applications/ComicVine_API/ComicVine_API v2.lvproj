@@ -20,6 +20,7 @@
 		<Item Name="Main Comic Manager.vi" Type="VI" URL="../Main Comic Manager.vi"/>
 		<Item Name="Oneshot Tester.vi" Type="VI" URL="../Oneshot Tester.vi"/>
 		<Item Name="plot.issues.vi" Type="VI" URL="../graphics/plot.issues.vi"/>
+		<Item Name="plot.volumes.vi" Type="VI" URL="../graphics/plot.volumes.vi"/>
 		<Item Name="volume.type.colors--cluster.ctl" Type="VI" URL="../graphics/volume.type.colors--cluster.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
@@ -39,6 +40,7 @@
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
 				<Item Name="Conditional State String__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Conditional State String__jki_lib_state_machine.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Create Directory Recursive.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Create Directory Recursive.vi"/>
@@ -111,6 +113,7 @@
 				<Item Name="Recursive File List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Recursive File List.vi"/>
 				<Item Name="Remove Duplicates From 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Remove Duplicates From 1D Array.vim"/>
 				<Item Name="REST Client.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/_JKI.lib/REST Client/REST Client.lvlib"/>
+				<Item Name="RGB to Color.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/RGB to Color.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Select State(s)__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Select State(s)__jki_lib_state_machine.vi"/>
 				<Item Name="Select State(s)_bool__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Select State(s)_bool__jki_lib_state_machine.vi"/>
@@ -161,7 +164,6 @@
 			<Item Name="create.volume.index.vi" Type="VI" URL="../graphics/create.volume.index.vi"/>
 			<Item Name="create.yearly.array.vi" Type="VI" URL="../../../lib/TimeTools/create.yearly.array.vi"/>
 			<Item Name="creator.ctl" Type="VI" URL="../definitions/creator.ctl"/>
-			<Item Name="draw.picture.vi" Type="VI" URL="../graphics/draw.picture.vi"/>
 			<Item Name="filter.volume.data.vi" Type="VI" URL="../graphics/filter.volume.data.vi"/>
 			<Item Name="GET_issue_by_id.vi" Type="VI" URL="../RESTful_calls/GET_issue_by_id.vi"/>
 			<Item Name="GET_volume_by_id.vi" Type="VI" URL="../RESTful_calls/GET_volume_by_id.vi"/>
