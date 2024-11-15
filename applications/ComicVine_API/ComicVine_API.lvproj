@@ -270,6 +270,7 @@
 			<Item Name="volume.type.colors--cluster.ctl" Type="VI" URL="../graphics/volume.type.colors--cluster.ctl"/>
 			<Item Name="plot.issues.vi" Type="VI" URL="../graphics/plot.issues.vi"/>
 			<Item Name="interpolate.issue.dates.vi" Type="VI" URL="../subvis/interpolate.issue.dates.vi"/>
+			<Item Name="plot.volumes.vi" Type="VI" URL="../graphics/plot.volumes.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
