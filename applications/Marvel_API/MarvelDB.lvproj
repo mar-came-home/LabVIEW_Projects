@@ -22,6 +22,7 @@
 			<Item Name="GenerateMarvelSeriesMap.vi" Type="VI" URL="../SubVI&apos;s/GenerateMarvelSeriesMap.vi"/>
 			<Item Name="GET.comics.month.vi" Type="VI" URL="../SubVI&apos;s/GET.comics.month.vi"/>
 			<Item Name="GET.comics.series.vi" Type="VI" URL="../SubVI&apos;s/GET.comics.series.vi"/>
+			<Item Name="GET.comics.upcoming.vi" Type="VI" URL="../SubVI&apos;s/GET.comics.upcoming.vi"/>
 			<Item Name="GET.series.by_id.vi" Type="VI" URL="../SubVI&apos;s/GET.series.by_id.vi"/>
 			<Item Name="GET.series.vi" Type="VI" URL="../SubVI&apos;s/GET.series.vi"/>
 			<Item Name="GetAllComicsBySeries.vi" Type="VI" URL="../SubVI&apos;s/GetAllComicsBySeries.vi"/>
@@ -66,11 +67,12 @@
 			<Item Name="FindMissingIssues.vi" Type="VI" URL="../../../lib/File_Handling/FindMissingIssues.vi"/>
 			<Item Name="GenerateUpcomingReport.vi" Type="VI" URL="../GenerateUpcomingReport.vi"/>
 			<Item Name="GetAllSeries.vi" Type="VI" URL="../GetAllSeries.vi"/>
+			<Item Name="GetUpcomingComics.vi" Type="VI" URL="../SubVI&apos;s/GetUpcomingComics.vi"/>
+			<Item Name="integrate.new.comics.into.collection.vi" Type="VI" URL="../SubVI&apos;s/integrate.new.comics.into.collection.vi"/>
 			<Item Name="Organize Folders.vi" Type="VI" URL="../SubVI&apos;s/Organize Folders.vi"/>
 			<Item Name="Organize new Comics.vi" Type="VI" URL="../Organize new Comics.vi"/>
 			<Item Name="RemoveUsedSeriesJSONs.vi" Type="VI" URL="../../File_Namer/SubVIs/RemoveUsedSeriesJSONs.vi"/>
 			<Item Name="RenameAllFoldersToLower.vi" Type="VI" URL="../RenameAllFoldersToLower.vi"/>
-			<Item Name="Setup Monthly Folders.vi" Type="VI" URL="../SubVI&apos;s/Setup Monthly Folders.vi"/>
 			<Item Name="VerifyToPresentFolderStatus.vi" Type="VI" URL="../../../lib/File_Handling/VerifyToPresentFolderStatus.vi"/>
 		</Item>
 		<Item Name="Comic Manager.vi" Type="VI" URL="../Comic Manager.vi"/>
@@ -80,9 +82,7 @@
 		<Item Name="dialog.change.string.vi" Type="VI" URL="../../../lib/Dialog/dialog.change.string.vi"/>
 		<Item Name="FileNamer_SM.vi" Type="VI" URL="../FileNamer_SM.vi"/>
 		<Item Name="filter.marvel_series.vi" Type="VI" URL="../SubVI&apos;s/filter.marvel_series.vi"/>
-		<Item Name="GET.comics.upcoming.vi" Type="VI" URL="../SubVI&apos;s/GET.comics.upcoming.vi"/>
 		<Item Name="GetMarvel.lvclass" Type="LVClass" URL="../GetMarvel_class/GetMarvel.lvclass"/>
-		<Item Name="GetUpcomingComics.vi" Type="VI" URL="../SubVI&apos;s/GetUpcomingComics.vi"/>
 		<Item Name="Parse &amp; Save Comics Reply File.vi" Type="VI" URL="../Parse &amp; Save Comics Reply File.vi"/>
 		<Item Name="parse.clz.report.vi" Type="VI" URL="../SubVI&apos;s/parse.clz.report.vi"/>
 		<Item Name="parse.series.vi" Type="VI" URL="../SubVI&apos;s/parse.series.vi"/>
