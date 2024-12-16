@@ -44,7 +44,6 @@
 			<Item Name="local_team.ctl" Type="VI" URL="../definitions/local_team.ctl"/>
 			<Item Name="local_volume.ctl" Type="VI" URL="../definitions/local_volume.ctl"/>
 			<Item Name="location.ctl" Type="VI" URL="../definitions/location.ctl"/>
-			<Item Name="picture.data--cluster.ctl" Type="VI" URL="../graphics/picture.data--cluster.ctl"/>
 			<Item Name="seriesInfo.ctl" Type="VI" URL="../definitions/seriesInfo.ctl"/>
 			<Item Name="seriesJSON.ctl" Type="VI" URL="../definitions/seriesJSON.ctl"/>
 			<Item Name="storyArc.ctl" Type="VI" URL="../definitions/storyArc.ctl"/>
@@ -59,7 +58,6 @@
 				<Item Name="volume.index.content--cluster.ctl" Type="VI" URL="../graphics/volume.index.content--cluster.ctl"/>
 				<Item Name="volume.map--cluster.ctl" Type="VI" URL="../graphics/volume.map--cluster.ctl"/>
 			</Item>
-			<Item Name="graphic_tester.vi" Type="VI" URL="../graphics/graphic_tester.vi"/>
 			<Item Name="sort.volumes.vi" Type="VI" URL="../graphics/sort.volumes.vi"/>
 			<Item Name="filter.volume.data.vi" Type="VI" URL="../graphics/filter.volume.data.vi"/>
 			<Item Name="read.volume.map.vi" Type="VI" URL="../graphics/read.volume.map.vi"/>
@@ -93,7 +91,6 @@
 		</Item>
 		<Item Name="subVI&apos;s" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
-			<Item Name="apply.all.available.storeDates.vi" Type="VI" URL="../subvis/apply.all.available.storeDates.vi"/>
 			<Item Name="build.key.maps.vi" Type="VI" URL="../subvis/build.key.maps.vi"/>
 			<Item Name="build.volume.path.map" Type="VI" URL="../subvis/build.volume.path.map"/>
 			<Item Name="check.cv_vols.last_modified.vi" Type="VI" URL="../subvis/check.cv_vols.last_modified.vi"/>
@@ -103,10 +100,7 @@
 			<Item Name="comicvine.to.local_storyArc.vi" Type="VI" URL="../subvis/comicvine.to.local_storyArc.vi"/>
 			<Item Name="comicvine.to.local_team.vi" Type="VI" URL="../subvis/comicvine.to.local_team.vi"/>
 			<Item Name="comicvine.to.local_volume.vi" Type="VI" URL="../subvis/comicvine.to.local_volume.vi"/>
-			<Item Name="draw.picture.vi" Type="VI" URL="../graphics/draw.picture.vi"/>
 			<Item Name="filter.teams.and.chars.per.volume.vi" Type="VI" URL="../subvis/filter.teams.and.chars.per.volume.vi"/>
-			<Item Name="load.jsons.vi" Type="VI" URL="../load.jsons.vi"/>
-			<Item Name="sort.by.volume.type.vi" Type="VI" URL="../graphics/sort.by.volume.type.vi"/>
 			<Item Name="sort.volume.issues.vi" Type="VI" URL="../subvis/sort.volume.issues.vi"/>
 		</Item>
 		<Item Name="testers" Type="Folder">
@@ -117,6 +111,8 @@
 			<Item Name="web scraper to API converter.vi" Type="VI" URL="../class_testers/web scraper to API converter.vi"/>
 			<Item Name="comic_crawler_tester.vi" Type="VI" URL="../class_testers/comic_crawler_tester.vi"/>
 			<Item Name="get single issue via cv_api.vi" Type="VI" URL="../class_testers/get single issue via cv_api.vi"/>
+			<Item Name="selection.tester.vi" Type="VI" URL="../selection_dropdown/selection.tester.vi"/>
+			<Item Name="graphic_tester.vi" Type="VI" URL="../graphics/graphic_tester.vi"/>
 		</Item>
 		<Item Name="WebScraper" Type="Folder">
 			<Item Name="comic_class.lvclass" Type="LVClass" URL="../comic_class/comic_class.lvclass"/>
@@ -126,6 +122,15 @@
 		<Item Name="Manager Control Panel.vi" Type="VI" URL="../comic_manager/Manager Control Panel.vi"/>
 		<Item Name="Main Comic Manager.vi" Type="VI" URL="../Main Comic Manager.vi"/>
 		<Item Name="Get all issues from CV.vi" Type="VI" URL="../class_testers/Get all issues from CV.vi"/>
+		<Item Name="load.jsons.vi" Type="VI" URL="../load.jsons.vi"/>
+		<Item Name="draw.picture.vi" Type="VI" URL="../graphics/draw.picture.vi"/>
+		<Item Name="picture.data--cluster.ctl" Type="VI" URL="../graphics/picture.data--cluster.ctl"/>
+		<Item Name="sort.by.volume.type.vi" Type="VI" URL="../graphics/sort.by.volume.type.vi"/>
+		<Item Name="apply.all.available.storeDates.vi" Type="VI" URL="../subvis/apply.all.available.storeDates.vi"/>
+		<Item Name="selection_dropdown.lvclass" Type="LVClass" URL="../selection_dropdown/selection_dropdown.lvclass"/>
+		<Item Name="manager_daemon.lvclass" Type="LVClass" URL="../comic_manager/manager_daemon/manager_daemon.lvclass"/>
+		<Item Name="Load Binaries for Selections.vi" Type="VI" URL="../graphics/Load Binaries for Selections.vi"/>
+		<Item Name="Name Filter Event.vi" Type="VI" URL="../selection_dropdown/Name Filter Event.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="openg_array.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/openg_array.lvlib"/>
@@ -240,7 +245,12 @@
 				<Item Name="Move Pen.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Move Pen.vi"/>
 				<Item Name="Draw Line.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Line.vi"/>
 				<Item Name="Draw Text at Point.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Text at Point.vi"/>
-				<Item Name="lvwebclient_64.dll" Type="Document" URL="/&lt;vilib&gt;/NI/Advanced HTTP Client/lvwebclient_64.dll"/>
+				<Item Name="2a8ab48044d2601e" Type="VI" URL="/&lt;vilib&gt;/sklein/WebView2/Libs/2a8ab48044d2601e"/>
+				<Item Name="Draw Round Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Round Rect.vi"/>
+				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
+				<Item Name="RGB to Color.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/RGB to Color.vi"/>
+				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
+				<Item Name="lvwebclient_32.dll" Type="Document" URL="/&lt;vilib&gt;/NI/Advanced HTTP Client/lvwebclient_32.dll"/>
 				<Item Name="SQLite.lvlib" Type="Library" URL="/&lt;vilib&gt;/drjdpowell/SQLite Library/SQLite.lvlib"/>
 				<Item Name="JDP Timestamp.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/Timestamp/JDP Timestamp.lvlib"/>
 				<Item Name="Command Line String To Path.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Command Line String To Path.vi"/>
@@ -248,11 +258,6 @@
 				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/numeric/LVNumericRepresentation.ctl"/>
 				<Item Name="JDP Utility.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/JDP Utility.lvlib"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
-				<Item Name="2a8ab48044d2601e" Type="VI" URL="/&lt;vilib&gt;/sklein/WebView2/Libs/2a8ab48044d2601e"/>
-				<Item Name="Draw Round Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Round Rect.vi"/>
-				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
-				<Item Name="RGB to Color.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/RGB to Color.vi"/>
-				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
 			</Item>
 			<Item Name="delta_time.vi" Type="VI" URL="../../../../lab/Encoding Lab/SupportVIs/delta_time.vi"/>
 			<Item Name="GetSubString.vi" Type="VI" URL="../../../lib/StringTools/GetSubString.vi"/>
@@ -273,7 +278,6 @@
 			<Item Name="plot.issues.vi" Type="VI" URL="../graphics/plot.issues.vi"/>
 			<Item Name="interpolate.issue.dates.vi" Type="VI" URL="../subvis/interpolate.issue.dates.vi"/>
 			<Item Name="plot.volumes.vi" Type="VI" URL="../graphics/plot.volumes.vi"/>
-			<Item Name="manager_daemon.lvclass" Type="LVClass" URL="../comic_manager/manager_daemon/manager_daemon.lvclass"/>
 			<Item Name="issue.display--cluster.ctl" Type="VI" URL="../comic_manager/TypeDefs/issue.display--cluster.ctl"/>
 			<Item Name="graphic.filter--cluster.ctl" Type="VI" URL="../comic_manager/TypeDefs/graphic.filter--cluster.ctl"/>
 		</Item>
