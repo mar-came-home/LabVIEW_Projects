@@ -50,6 +50,7 @@
 			<Item Name="team.ctl" Type="VI" URL="../definitions/team.ctl"/>
 			<Item Name="thing.ctl" Type="VI" URL="../definitions/thing.ctl"/>
 			<Item Name="volume.index--cluster.ctl" Type="VI" URL="../definitions/volume.index--cluster.ctl"/>
+			<Item Name="volume.object--cluster.ctl" Type="VI" URL="../graphics/volume.object--cluster.ctl"/>
 			<Item Name="volume.type--enum.ctl" Type="VI" URL="../definitions/volume.type--enum.ctl"/>
 		</Item>
 		<Item Name="Graphics" Type="Folder">
@@ -122,13 +123,14 @@
 		<Item Name="Main Comic Manager.vi" Type="VI" URL="../Main Comic Manager.vi"/>
 		<Item Name="Get all issues from CV.vi" Type="VI" URL="../class_testers/Get all issues from CV.vi"/>
 		<Item Name="load.jsons.vi" Type="VI" URL="../load.jsons.vi"/>
-		<Item Name="volume.object--cluster.ctl" Type="VI" URL="../graphics/volume.object--cluster.ctl"/>
 		<Item Name="draw.picture.vi" Type="VI" URL="../graphics/draw.picture.vi"/>
 		<Item Name="picture.data--cluster.ctl" Type="VI" URL="../graphics/picture.data--cluster.ctl"/>
 		<Item Name="sort.by.volume.type.vi" Type="VI" URL="../graphics/sort.by.volume.type.vi"/>
 		<Item Name="apply.all.available.storeDates.vi" Type="VI" URL="../subvis/apply.all.available.storeDates.vi"/>
 		<Item Name="selection_dropdown.lvclass" Type="LVClass" URL="../selection_dropdown/selection_dropdown.lvclass"/>
+		<Item Name="manager_daemon.lvclass" Type="LVClass" URL="../comic_manager/manager_daemon/manager_daemon.lvclass"/>
 		<Item Name="Load Binaries for Selections.vi" Type="VI" URL="../graphics/Load Binaries for Selections.vi"/>
+		<Item Name="Name Filter Event.vi" Type="VI" URL="../selection_dropdown/Name Filter Event.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="openg_array.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/openg_array.lvlib"/>
@@ -249,12 +251,13 @@
 				<Item Name="RGB to Color.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/RGB to Color.vi"/>
 				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
 				<Item Name="lvwebclient_32.dll" Type="Document" URL="/&lt;vilib&gt;/NI/Advanced HTTP Client/lvwebclient_32.dll"/>
-				<Item Name="Open.vi" Type="VI" URL="/&lt;vilib&gt;/drjdpowell/SQLite Library/SQL Connection/Open.vi"/>
-				<Item Name="Open (path).vi" Type="VI" URL="/&lt;vilib&gt;/drjdpowell/SQLite Library/SQL Connection/Open (path).vi"/>
-				<Item Name="Open (string).vi" Type="VI" URL="/&lt;vilib&gt;/drjdpowell/SQLite Library/SQL Connection/Open (string).vi"/>
-				<Item Name="Execute SQL (Poly).vi" Type="VI" URL="/&lt;vilib&gt;/drjdpowell/SQLite Library/SQL Connection/Execute SQL (Poly).vi"/>
-				<Item Name="Execute SQL (No results).vi" Type="VI" URL="/&lt;vilib&gt;/drjdpowell/SQLite Library/SQL Connection/Execute SQL (No results).vi"/>
-				<Item Name="Connection.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/drjdpowell/SQLite Library/SQL Connection/Connection.lvclass"/>
+				<Item Name="SQLite.lvlib" Type="Library" URL="/&lt;vilib&gt;/drjdpowell/SQLite Library/SQLite.lvlib"/>
+				<Item Name="JDP Timestamp.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/Timestamp/JDP Timestamp.lvlib"/>
+				<Item Name="Command Line String To Path.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Command Line String To Path.vi"/>
+				<Item Name="UNIXPathStringToPath.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/CFURL.llb/UNIXPathStringToPath.vi"/>
+				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/numeric/LVNumericRepresentation.ctl"/>
+				<Item Name="JDP Utility.lvlib" Type="Library" URL="/&lt;vilib&gt;/JDP Science/JDP Science Common Utilities/JDP Utility.lvlib"/>
+				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 			</Item>
 			<Item Name="delta_time.vi" Type="VI" URL="../../../../lab/Encoding Lab/SupportVIs/delta_time.vi"/>
 			<Item Name="GetSubString.vi" Type="VI" URL="../../../lib/StringTools/GetSubString.vi"/>
@@ -275,7 +278,6 @@
 			<Item Name="plot.issues.vi" Type="VI" URL="../graphics/plot.issues.vi"/>
 			<Item Name="interpolate.issue.dates.vi" Type="VI" URL="../subvis/interpolate.issue.dates.vi"/>
 			<Item Name="plot.volumes.vi" Type="VI" URL="../graphics/plot.volumes.vi"/>
-			<Item Name="manager_daemon.lvclass" Type="LVClass" URL="../comic_manager/manager_daemon/manager_daemon.lvclass"/>
 			<Item Name="issue.display--cluster.ctl" Type="VI" URL="../comic_manager/TypeDefs/issue.display--cluster.ctl"/>
 			<Item Name="graphic.filter--cluster.ctl" Type="VI" URL="../comic_manager/TypeDefs/graphic.filter--cluster.ctl"/>
 		</Item>
