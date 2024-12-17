@@ -44,6 +44,7 @@
 			<Item Name="local_team.ctl" Type="VI" URL="../definitions/local_team.ctl"/>
 			<Item Name="local_volume.ctl" Type="VI" URL="../definitions/local_volume.ctl"/>
 			<Item Name="location.ctl" Type="VI" URL="../definitions/location.ctl"/>
+			<Item Name="picture.data--cluster.ctl" Type="VI" URL="../graphics/picture.data--cluster.ctl"/>
 			<Item Name="seriesInfo.ctl" Type="VI" URL="../definitions/seriesInfo.ctl"/>
 			<Item Name="seriesJSON.ctl" Type="VI" URL="../definitions/seriesJSON.ctl"/>
 			<Item Name="storyArc.ctl" Type="VI" URL="../definitions/storyArc.ctl"/>
@@ -91,6 +92,7 @@
 		</Item>
 		<Item Name="subVI&apos;s" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
+			<Item Name="apply.all.available.storeDates.vi" Type="VI" URL="../subvis/apply.all.available.storeDates.vi"/>
 			<Item Name="build.key.maps.vi" Type="VI" URL="../subvis/build.key.maps.vi"/>
 			<Item Name="build.volume.path.map" Type="VI" URL="../subvis/build.volume.path.map"/>
 			<Item Name="check.cv_vols.last_modified.vi" Type="VI" URL="../subvis/check.cv_vols.last_modified.vi"/>
@@ -100,6 +102,7 @@
 			<Item Name="comicvine.to.local_storyArc.vi" Type="VI" URL="../subvis/comicvine.to.local_storyArc.vi"/>
 			<Item Name="comicvine.to.local_team.vi" Type="VI" URL="../subvis/comicvine.to.local_team.vi"/>
 			<Item Name="comicvine.to.local_volume.vi" Type="VI" URL="../subvis/comicvine.to.local_volume.vi"/>
+			<Item Name="draw.picture.vi" Type="VI" URL="../graphics/draw.picture.vi"/>
 			<Item Name="filter.teams.and.chars.per.volume.vi" Type="VI" URL="../subvis/filter.teams.and.chars.per.volume.vi"/>
 			<Item Name="sort.volume.issues.vi" Type="VI" URL="../subvis/sort.volume.issues.vi"/>
 		</Item>
@@ -123,10 +126,7 @@
 		<Item Name="Main Comic Manager.vi" Type="VI" URL="../Main Comic Manager.vi"/>
 		<Item Name="Get all issues from CV.vi" Type="VI" URL="../class_testers/Get all issues from CV.vi"/>
 		<Item Name="load.jsons.vi" Type="VI" URL="../load.jsons.vi"/>
-		<Item Name="draw.picture.vi" Type="VI" URL="../graphics/draw.picture.vi"/>
-		<Item Name="picture.data--cluster.ctl" Type="VI" URL="../graphics/picture.data--cluster.ctl"/>
 		<Item Name="sort.by.volume.type.vi" Type="VI" URL="../graphics/sort.by.volume.type.vi"/>
-		<Item Name="apply.all.available.storeDates.vi" Type="VI" URL="../subvis/apply.all.available.storeDates.vi"/>
 		<Item Name="selection_dropdown.lvclass" Type="LVClass" URL="../selection_dropdown/selection_dropdown.lvclass"/>
 		<Item Name="manager_daemon.lvclass" Type="LVClass" URL="../comic_manager/manager_daemon/manager_daemon.lvclass"/>
 		<Item Name="Load Binaries for Selections.vi" Type="VI" URL="../graphics/Load Binaries for Selections.vi"/>
