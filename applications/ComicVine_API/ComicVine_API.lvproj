@@ -13,47 +13,15 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Typedefs" Type="Folder">
-			<Property Name="NI.SortType" Type="Int">0</Property>
-			<Item Name="character.ctl" Type="VI" URL="../definitions/character.ctl"/>
-			<Item Name="comicvine_character.ctl" Type="VI" URL="../definitions/comicvine_character.ctl"/>
-			<Item Name="comicvine_character.results.ctl" Type="VI" URL="../definitions/comicvine_character.results.ctl"/>
-			<Item Name="comicvine_issue.associated_image.ctl" Type="VI" URL="../definitions/comicvine_issue.associated_image.ctl"/>
-			<Item Name="comicvine_issue.ctl" Type="VI" URL="../definitions/comicvine_issue.ctl"/>
-			<Item Name="comicvine_issue.generic_credit.ctl" Type="VI" URL="../definitions/comicvine_issue.generic_credit.ctl"/>
-			<Item Name="comicvine_issue.person_credit.ctl" Type="VI" URL="../definitions/comicvine_issue.person_credit.ctl"/>
-			<Item Name="comicvine_issue.results.ctl" Type="VI" URL="../definitions/comicvine_issue.results.ctl"/>
-			<Item Name="comicvine_publisher.ctl" Type="VI" URL="../definitions/comicvine_publisher.ctl"/>
-			<Item Name="comicvine_publisher.results.ctl" Type="VI" URL="../definitions/comicvine_publisher.results.ctl"/>
-			<Item Name="comicvine_storyArc.ctl" Type="VI" URL="../definitions/comicvine_storyArc.ctl"/>
-			<Item Name="comicvine_storyArc.results.ctl" Type="VI" URL="../definitions/comicvine_storyArc.results.ctl"/>
-			<Item Name="comicvine_team.ctl" Type="VI" URL="../definitions/comicvine_team.ctl"/>
-			<Item Name="comicvine_team.results.ctl" Type="VI" URL="../definitions/comicvine_team.results.ctl"/>
-			<Item Name="comicvine_volume.ctl" Type="VI" URL="../definitions/comicvine_volume.ctl"/>
-			<Item Name="comicvine_volume.issue.ctl" Type="VI" URL="../definitions/comicvine_volume.issue.ctl"/>
-			<Item Name="comicvine_volume.publisher.ctl" Type="VI" URL="../definitions/comicvine_volume.publisher.ctl"/>
-			<Item Name="comicvine_volume.results.ctl" Type="VI" URL="../definitions/comicvine_volume.results.ctl"/>
-			<Item Name="concept.ctl" Type="VI" URL="../definitions/concept.ctl"/>
-			<Item Name="creator.ctl" Type="VI" URL="../definitions/creator.ctl"/>
-			<Item Name="issueInfo.ctl" Type="VI" URL="../definitions/issueInfo.ctl"/>
-			<Item Name="local_character.ctl" Type="VI" URL="../definitions/local_character.ctl"/>
-			<Item Name="local_issue.ctl" Type="VI" URL="../definitions/local_issue.ctl"/>
-			<Item Name="local_publisher.ctl" Type="VI" URL="../definitions/local_publisher.ctl"/>
-			<Item Name="local_storyArc.ctl" Type="VI" URL="../definitions/local_storyArc.ctl"/>
-			<Item Name="local_team.ctl" Type="VI" URL="../definitions/local_team.ctl"/>
-			<Item Name="local_volume.ctl" Type="VI" URL="../definitions/local_volume.ctl"/>
-			<Item Name="location.ctl" Type="VI" URL="../definitions/location.ctl"/>
-			<Item Name="seriesInfo.ctl" Type="VI" URL="../definitions/seriesInfo.ctl"/>
-			<Item Name="seriesJSON.ctl" Type="VI" URL="../definitions/seriesJSON.ctl"/>
-			<Item Name="storyArc.ctl" Type="VI" URL="../definitions/storyArc.ctl"/>
-			<Item Name="team.ctl" Type="VI" URL="../definitions/team.ctl"/>
-			<Item Name="thing.ctl" Type="VI" URL="../definitions/thing.ctl"/>
-			<Item Name="volume.object--cluster.ctl" Type="VI" URL="../definitions/volume.object--cluster.ctl"/>
-			<Item Name="volume.type--enum.ctl" Type="VI" URL="../definitions/volume.type--enum.ctl"/>
+		<Item Name="Libraries" Type="Folder">
+			<Item Name="CV_Shared_Library.lvlib" Type="Library" URL="../CV_Shared_Library/CV_Shared_Library.lvlib"/>
+			<Item Name="CV_RESTful_Lib.lvlib" Type="Library" URL="../CV_RESTful_Library/CV_RESTful_Lib.lvlib"/>
 		</Item>
 		<Item Name="Editor_UI" Type="Folder">
 			<Item Name="subvis" Type="Folder">
 				<Item Name="plot.issues.vi" Type="VI" URL="../Manager_UI/subvis/plot.issues.vi"/>
+				<Item Name="sort.volume.issues.vi" Type="VI" URL="../Manager_UI/subvis/sort.volume.issues.vi"/>
+				<Item Name="interpolate.issue.dates.vi" Type="VI" URL="../Manager_UI/subvis/interpolate.issue.dates.vi"/>
 			</Item>
 			<Item Name="Editor_UI_Main.vi" Type="VI" URL="../Manager_UI/Editor_UI_Main.vi"/>
 		</Item>
@@ -77,53 +45,18 @@
 			<Item Name="Graphic_UI_Main.vi" Type="VI" URL="../Graphic_UI/Graphic_UI_Main.vi"/>
 			<Item Name="selection_dropdown.lvclass" Type="LVClass" URL="../selection_dropdown/selection_dropdown.lvclass"/>
 		</Item>
-		<Item Name="RESTful vis" Type="Folder">
-			<Property Name="NI.SortType" Type="Int">0</Property>
-			<Item Name="Class Testers" Type="Folder">
-				<Item Name="Get all issues from CV.vi" Type="VI" URL="../class_testers/Get all issues from CV.vi"/>
-				<Item Name="get single issue via cv_api.vi" Type="VI" URL="../class_testers/get single issue via cv_api.vi"/>
-				<Item Name="issue_parser_tester.vi" Type="VI" URL="../class_testers/issue_parser_tester.vi"/>
-			</Item>
-			<Item Name="create.volume.filename.vi" Type="VI" URL="../RESTful_calls/create.volume.filename.vi"/>
-			<Item Name="GET_ALL_ISSUES.vi" Type="VI" URL="../RESTful_calls/GET_ALL_ISSUES.vi"/>
-			<Item Name="GET_character_by_id.vi" Type="VI" URL="../RESTful_calls/GET_character_by_id.vi"/>
-			<Item Name="GET_issue_by_id.vi" Type="VI" URL="../RESTful_calls/GET_issue_by_id.vi"/>
-			<Item Name="GET_publisher_by_id.vi" Type="VI" URL="../RESTful_calls/GET_publisher_by_id.vi"/>
-			<Item Name="GET_storyArc_by_id.vi" Type="VI" URL="../RESTful_calls/GET_storyArc_by_id.vi"/>
-			<Item Name="GET_team_by_id.vi" Type="VI" URL="../RESTful_calls/GET_team_by_id.vi"/>
-			<Item Name="GET_volume_by_id.vi" Type="VI" URL="../RESTful_calls/GET_volume_by_id.vi"/>
-			<Item Name="GET_volume_last_update.vi" Type="VI" URL="../RESTful_calls/GET_volume_last_update.vi"/>
-			<Item Name="GET_volumes_by_publisher.vi" Type="VI" URL="../RESTful_calls/GET_volumes_by_publisher.vi"/>
-			<Item Name="open.local.issue.file.vi" Type="VI" URL="../subvis/open.local.issue.file.vi"/>
-			<Item Name="open.local.volume.file.vi" Type="VI" URL="../subvis/open.local.volume.file.vi"/>
-			<Item Name="Open_RESTful_connection.vi" Type="VI" URL="../RESTful_calls/Open_RESTful_connection.vi"/>
-			<Item Name="read.issue_ids.from.volume.vi" Type="VI" URL="../RESTful_calls/read.issue_ids.from.volume.vi"/>
-			<Item Name="UPDATE_volume_by_path.vi" Type="VI" URL="../RESTful_calls/UPDATE_volume_by_path.vi"/>
-		</Item>
-		<Item Name="subVI&apos;s" Type="Folder">
-			<Property Name="NI.SortType" Type="Int">0</Property>
-			<Item Name="apply.all.available.storeDates.vi" Type="VI" URL="../subvis/apply.all.available.storeDates.vi"/>
-			<Item Name="build.key.maps.vi" Type="VI" URL="../subvis/build.key.maps.vi"/>
-			<Item Name="build.volume.path.map" Type="VI" URL="../subvis/build.volume.path.map"/>
-			<Item Name="check.cv_vols.last_modified.vi" Type="VI" URL="../subvis/check.cv_vols.last_modified.vi"/>
-			<Item Name="comicvine.to.local_character.vi" Type="VI" URL="../subvis/comicvine.to.local_character.vi"/>
-			<Item Name="comicvine.to.local_issue.vi" Type="VI" URL="../subvis/comicvine.to.local_issue.vi"/>
-			<Item Name="comicvine.to.local_publisher.vi" Type="VI" URL="../subvis/comicvine.to.local_publisher.vi"/>
-			<Item Name="comicvine.to.local_storyArc.vi" Type="VI" URL="../subvis/comicvine.to.local_storyArc.vi"/>
-			<Item Name="comicvine.to.local_team.vi" Type="VI" URL="../subvis/comicvine.to.local_team.vi"/>
-			<Item Name="comicvine.to.local_volume.vi" Type="VI" URL="../subvis/comicvine.to.local_volume.vi"/>
-			<Item Name="filter.teams.and.chars.per.volume.vi" Type="VI" URL="../subvis/filter.teams.and.chars.per.volume.vi"/>
-			<Item Name="sort.volume.issues.vi" Type="VI" URL="../subvis/sort.volume.issues.vi"/>
-		</Item>
 		<Item Name="testers" Type="Folder">
 			<Item Name="series_parser_tester.vi" Type="VI" URL="../class_testers/series_parser_tester.vi"/>
-			<Item Name="top_level.vi" Type="VI" URL="../WebScraper/Testers/top_level.vi"/>
 			<Item Name="web scraper to API converter.vi" Type="VI" URL="../class_testers/web scraper to API converter.vi"/>
-			<Item Name="selection.tester.vi" Type="VI" URL="../selection_dropdown/selection.tester.vi"/>
+			<Item Name="selection.tester.vi" Type="VI" URL="../class_testers/selection.tester.vi"/>
+			<Item Name="Get all issues from CV.vi" Type="VI" URL="../class_testers/Get all issues from CV.vi"/>
+			<Item Name="get single issue via cv_api.vi" Type="VI" URL="../class_testers/get single issue via cv_api.vi"/>
 		</Item>
 		<Item Name="WebScraper" Type="Folder">
 			<Item Name="Class Tester" Type="Folder">
 				<Item Name="Downloader.vi" Type="VI" URL="../WebScraper/Testers/Downloader.vi"/>
+				<Item Name="issue_parser_tester.vi" Type="VI" URL="../WebScraper/Testers/issue_parser_tester.vi"/>
+				<Item Name="top_level.vi" Type="VI" URL="../WebScraper/Testers/top_level.vi"/>
 			</Item>
 			<Item Name="comic_class.lvclass" Type="LVClass" URL="../WebScraper/comic_class/comic_class.lvclass"/>
 			<Item Name="issue_class.lvclass" Type="LVClass" URL="../WebScraper/issue_class/issue_class.lvclass"/>
@@ -132,7 +65,10 @@
 		<Item Name="Crawler" Type="Folder">
 			<Item Name="Comic_Crawler_Main_UI.vi" Type="VI" URL="../Crawler/Comic_Crawler_Main_UI.vi"/>
 			<Item Name="CV_downloader.lvclass" Type="LVClass" URL="../CV_downloader/CV_downloader.lvclass"/>
-			<Item Name="comic_crawler.lvclass" Type="LVClass" URL="../comic_crawler/comic_crawler.lvclass"/>
+			<Item Name="comic_crawler.lvclass" Type="LVClass" URL="../Crawler/comic_crawler_class/comic_crawler.lvclass"/>
+		</Item>
+		<Item Name="Utilities" Type="Folder">
+			<Item Name="apply.all.available.storeDates.vi" Type="VI" URL="../Utilities/apply.all.available.storeDates.vi"/>
 		</Item>
 		<Item Name="Main.Launcher.vi" Type="VI" URL="../Main.Launcher.vi"/>
 		<Item Name="manager_daemon.lvclass" Type="LVClass" URL="../comic_manager/manager_daemon/manager_daemon.lvclass"/>
@@ -148,6 +84,10 @@
 				<Item Name="openg_variant.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/openg_variant.lvlib"/>
 				<Item Name="MGI Running Average.vi" Type="VI" URL="/&lt;userlib&gt;/_MGI/1D Array/MGI Running Average.vi"/>
 				<Item Name="MGI Running Average(DBL).vi" Type="VI" URL="/&lt;userlib&gt;/_MGI/1D Array/MGI Running Average/MGI Running Average(DBL).vi"/>
+				<Item Name="MGI Running Average(DBL[]).vi" Type="VI" URL="/&lt;userlib&gt;/_MGI/1D Array/MGI Running Average/MGI Running Average(DBL[]).vi"/>
+				<Item Name="MGI Average Type Enum.ctl" Type="VI" URL="/&lt;userlib&gt;/_MGI/1D Array/MGI Average Type Enum.ctl"/>
+				<Item Name="MGI Running Average(DBL[][]).vi" Type="VI" URL="/&lt;userlib&gt;/_MGI/1D Array/MGI Running Average/MGI Running Average(DBL[][]).vi"/>
+				<Item Name="MGI Running Average(SGL).vi" Type="VI" URL="/&lt;userlib&gt;/_MGI/1D Array/MGI Running Average/MGI Running Average(SGL).vi"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__jki_lib_state_machine.vi"/>
@@ -265,9 +205,8 @@
 				<Item Name="Write Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (I64).vi"/>
 				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
 				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
-				<Item Name="lvwebclient_32.dll" Type="Document" URL="/&lt;vilib&gt;/NI/Advanced HTTP Client/lvwebclient_32.dll"/>
+				<Item Name="lvwebclient_64.dll" Type="Document" URL="/&lt;vilib&gt;/NI/Advanced HTTP Client/lvwebclient_64.dll"/>
 			</Item>
-			<Item Name="delta_time.vi" Type="VI" URL="../../../../lab/Encoding Lab/SupportVIs/delta_time.vi"/>
 			<Item Name="GetSubString.vi" Type="VI" URL="../../../lib/StringTools/GetSubString.vi"/>
 			<Item Name="LongDateStringToTimeStamp.vi" Type="VI" URL="../../../lib/StringTools/LongDateStringToTimeStamp.vi"/>
 			<Item Name="MakeSortable.vi" Type="VI" URL="../../../lib/StringTools/MakeSortable.vi"/>
@@ -281,9 +220,6 @@
 			</Item>
 			<Item Name="create.yearly.array.vi" Type="VI" URL="../../../lib/TimeTools/create.yearly.array.vi"/>
 			<Item Name="inc.dec.timeframe.vi" Type="VI" URL="../../../lib/TimeTools/inc.dec.timeframe.vi"/>
-			<Item Name="interpolate.issue.dates.vi" Type="VI" URL="../subvis/interpolate.issue.dates.vi"/>
-			<Item Name="issue.display--cluster.ctl" Type="VI" URL="../comic_manager/TypeDefs/issue.display--cluster.ctl"/>
-			<Item Name="graphic.filter--cluster.ctl" Type="VI" URL="../comic_manager/TypeDefs/graphic.filter--cluster.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
