@@ -51,6 +51,7 @@
 			<Item Name="selection.tester.vi" Type="VI" URL="../class_testers/selection.tester.vi"/>
 			<Item Name="Get all issues from CV.vi" Type="VI" URL="../class_testers/Get all issues from CV.vi"/>
 			<Item Name="get single issue via cv_api.vi" Type="VI" URL="../class_testers/get single issue via cv_api.vi"/>
+			<Item Name="get range of comic last_updates.vi" Type="VI" URL="../class_testers/get range of comic last_updates.vi"/>
 		</Item>
 		<Item Name="WebScraper" Type="Folder">
 			<Item Name="Class Tester" Type="Folder">
@@ -69,6 +70,10 @@
 		</Item>
 		<Item Name="Utilities" Type="Folder">
 			<Item Name="apply.all.available.storeDates.vi" Type="VI" URL="../Utilities/apply.all.available.storeDates.vi"/>
+		</Item>
+		<Item Name="Download Manager" Type="Folder">
+			<Item Name="Download_Manager.lvlib" Type="Library" URL="../Download_Manager/Download_Manager.lvlib"/>
+			<Item Name="ToDos.txt" Type="Document" URL="../Download_Manager/ToDos.txt"/>
 		</Item>
 		<Item Name="Main.Launcher.vi" Type="VI" URL="../Main.Launcher.vi"/>
 		<Item Name="manager_daemon.lvclass" Type="LVClass" URL="../comic_manager/manager_daemon/manager_daemon.lvclass"/>
@@ -205,7 +210,7 @@
 				<Item Name="Write Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (I64).vi"/>
 				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
 				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
-				<Item Name="lvwebclient_64.dll" Type="Document" URL="/&lt;vilib&gt;/NI/Advanced HTTP Client/lvwebclient_64.dll"/>
+				<Item Name="lvwebclient_32.dll" Type="Document" URL="/&lt;vilib&gt;/NI/Advanced HTTP Client/lvwebclient_32.dll"/>
 			</Item>
 			<Item Name="GetSubString.vi" Type="VI" URL="../../../lib/StringTools/GetSubString.vi"/>
 			<Item Name="LongDateStringToTimeStamp.vi" Type="VI" URL="../../../lib/StringTools/LongDateStringToTimeStamp.vi"/>
@@ -220,6 +225,7 @@
 			</Item>
 			<Item Name="create.yearly.array.vi" Type="VI" URL="../../../lib/TimeTools/create.yearly.array.vi"/>
 			<Item Name="inc.dec.timeframe.vi" Type="VI" URL="../../../lib/TimeTools/inc.dec.timeframe.vi"/>
+			<Item Name="ClearWorkingDirectory.vi" Type="VI" URL="../../../lib/File_Handling/ClearWorkingDirectory.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

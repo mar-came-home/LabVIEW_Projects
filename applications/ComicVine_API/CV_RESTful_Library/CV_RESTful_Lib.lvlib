@@ -14,6 +14,8 @@
 	<Item Name="typedefs" Type="Folder">
 		<Item Name="cv_character--cluster.ctl" Type="VI" URL="../typedefs/cv_character--cluster.ctl"/>
 		<Item Name="cv_character.results--cluster.ctl" Type="VI" URL="../typedefs/cv_character.results--cluster.ctl"/>
+		<Item Name="cv_date_updated--cluster.ctl" Type="VI" URL="../typedefs/cv_date_updated--cluster.ctl"/>
+		<Item Name="cv_date_updated.results--array.ctl" Type="VI" URL="../typedefs/cv_date_updated.results--array.ctl"/>
 		<Item Name="cv_issue--cluster.ctl" Type="VI" URL="../typedefs/cv_issue--cluster.ctl"/>
 		<Item Name="cv_issue.associated_image--cluster.ctl" Type="VI" URL="../typedefs/cv_issue.associated_image--cluster.ctl"/>
 		<Item Name="cv_issue.generic_credit--cluster.ctl" Type="VI" URL="../typedefs/cv_issue.generic_credit--cluster.ctl"/>
@@ -45,6 +47,7 @@
 	<Item Name="GET_ALL_ISSUES.vi" Type="VI" URL="../GET_ALL_ISSUES.vi"/>
 	<Item Name="GET_character_by_id.vi" Type="VI" URL="../GET_character_by_id.vi"/>
 	<Item Name="GET_issue_by_id.vi" Type="VI" URL="../GET_issue_by_id.vi"/>
+	<Item Name="GET_issue_lastupdates_by_ids.vi" Type="VI" URL="../GET_issue_lastupdates_by_ids.vi"/>
 	<Item Name="GET_publisher_by_id.vi" Type="VI" URL="../GET_publisher_by_id.vi"/>
 	<Item Name="GET_storyArc_by_id.vi" Type="VI" URL="../GET_storyArc_by_id.vi"/>
 	<Item Name="GET_team_by_id.vi" Type="VI" URL="../GET_team_by_id.vi"/>

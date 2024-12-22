@@ -1,0 +1,3 @@
+* Add a log function so front panel isn't so ugly
+* Calculate a rough completion time (18 secs * job array size)
+* Add check on manager_daemon and start if not running
