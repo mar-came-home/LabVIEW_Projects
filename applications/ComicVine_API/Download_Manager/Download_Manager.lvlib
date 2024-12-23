@@ -13,6 +13,7 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="subvis" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+		<Item Name="add_url_manually.vi" Type="VI" URL="../subvis/add_url_manually.vi"/>
 		<Item Name="clear_job.vi" Type="VI" URL="../subvis/clear_job.vi"/>
 		<Item Name="create_vol_and_issue_date_job.vi" Type="VI" URL="../subvis/create_vol_and_issue_date_job.vi"/>
 		<Item Name="format.timer.vi" Type="VI" URL="../subvis/format.timer.vi"/>
