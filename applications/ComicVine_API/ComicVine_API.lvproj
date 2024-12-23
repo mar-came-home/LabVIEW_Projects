@@ -226,6 +226,9 @@
 			<Item Name="create.yearly.array.vi" Type="VI" URL="../../../lib/TimeTools/create.yearly.array.vi"/>
 			<Item Name="inc.dec.timeframe.vi" Type="VI" URL="../../../lib/TimeTools/inc.dec.timeframe.vi"/>
 			<Item Name="ClearWorkingDirectory.vi" Type="VI" URL="../../../lib/File_Handling/ClearWorkingDirectory.vi"/>
+			<Item Name="Create Log File.vi" Type="VI" URL="../../../lib/Logging/Create Log File.vi"/>
+			<Item Name="Write String to Log.vi" Type="VI" URL="../../../lib/Logging/Write String to Log.vi"/>
+			<Item Name="Write Error to Log.vi" Type="VI" URL="../../../lib/Logging/Write Error to Log.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

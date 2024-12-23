@@ -16,6 +16,7 @@
 		<Item Name="clear_job.vi" Type="VI" URL="../subvis/clear_job.vi"/>
 		<Item Name="create_vol_and_issue_date_job.vi" Type="VI" URL="../subvis/create_vol_and_issue_date_job.vi"/>
 		<Item Name="format.timer.vi" Type="VI" URL="../subvis/format.timer.vi"/>
+		<Item Name="init_logs.vi" Type="VI" URL="../subvis/init_logs.vi"/>
 		<Item Name="populate_volume_cache.vi" Type="VI" URL="../subvis/populate_volume_cache.vi"/>
 		<Item Name="run_job.vi" Type="VI" URL="../subvis/run_job.vi"/>
 	</Item>
