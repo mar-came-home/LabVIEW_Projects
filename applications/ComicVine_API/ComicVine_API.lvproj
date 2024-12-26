@@ -22,6 +22,7 @@
 				<Item Name="plot.issues.vi" Type="VI" URL="../Manager_UI/subvis/plot.issues.vi"/>
 				<Item Name="sort.volume.issues.vi" Type="VI" URL="../Manager_UI/subvis/sort.volume.issues.vi"/>
 				<Item Name="interpolate.issue.dates.vi" Type="VI" URL="../Manager_UI/subvis/interpolate.issue.dates.vi"/>
+				<Item Name="update_issue_cover_date.vi" Type="VI" URL="../Manager_UI/subvis/update_issue_cover_date.vi"/>
 			</Item>
 			<Item Name="Editor_UI_Main.vi" Type="VI" URL="../Manager_UI/Editor_UI_Main.vi"/>
 		</Item>
@@ -52,6 +53,7 @@
 			<Item Name="Get all issues from CV.vi" Type="VI" URL="../class_testers/Get all issues from CV.vi"/>
 			<Item Name="get single issue via cv_api.vi" Type="VI" URL="../class_testers/get single issue via cv_api.vi"/>
 			<Item Name="get range of comic last_updates.vi" Type="VI" URL="../class_testers/get range of comic last_updates.vi"/>
+			<Item Name="log_tester.vi" Type="VI" URL="../class_testers/log_tester.vi"/>
 		</Item>
 		<Item Name="WebScraper" Type="Folder">
 			<Item Name="Class Tester" Type="Folder">
@@ -77,6 +79,7 @@
 		</Item>
 		<Item Name="Main.Launcher.vi" Type="VI" URL="../Main.Launcher.vi"/>
 		<Item Name="manager_daemon.lvclass" Type="LVClass" URL="../comic_manager/manager_daemon/manager_daemon.lvclass"/>
+		<Item Name="timestamp_string.vi" Type="VI" URL="../../../lib/TimeTools/timestamp_string.vi"/>
 		<Item Name="Package Dependencies" Type="IIO Ladder Diagram">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 		</Item>
