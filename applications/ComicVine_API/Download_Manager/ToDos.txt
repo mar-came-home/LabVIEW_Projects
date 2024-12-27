@@ -1,0 +1,4 @@
+* Calculate a rough completion time (18 secs * job array size)
+* Add check on manager_daemon and start if not running
+* Add Jail Time handler
+* Create interface from Editor to Crawler to kick off a Volume update

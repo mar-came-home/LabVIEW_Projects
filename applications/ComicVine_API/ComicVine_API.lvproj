@@ -22,6 +22,7 @@
 				<Item Name="plot.issues.vi" Type="VI" URL="../Manager_UI/subvis/plot.issues.vi"/>
 				<Item Name="sort.volume.issues.vi" Type="VI" URL="../Manager_UI/subvis/sort.volume.issues.vi"/>
 				<Item Name="interpolate.issue.dates.vi" Type="VI" URL="../Manager_UI/subvis/interpolate.issue.dates.vi"/>
+				<Item Name="update_issue_cover_date.vi" Type="VI" URL="../Manager_UI/subvis/update_issue_cover_date.vi"/>
 			</Item>
 			<Item Name="Editor_UI_Main.vi" Type="VI" URL="../Manager_UI/Editor_UI_Main.vi"/>
 		</Item>
@@ -51,6 +52,8 @@
 			<Item Name="selection.tester.vi" Type="VI" URL="../class_testers/selection.tester.vi"/>
 			<Item Name="Get all issues from CV.vi" Type="VI" URL="../class_testers/Get all issues from CV.vi"/>
 			<Item Name="get single issue via cv_api.vi" Type="VI" URL="../class_testers/get single issue via cv_api.vi"/>
+			<Item Name="get range of comic last_updates.vi" Type="VI" URL="../class_testers/get range of comic last_updates.vi"/>
+			<Item Name="log_tester.vi" Type="VI" URL="../class_testers/log_tester.vi"/>
 		</Item>
 		<Item Name="WebScraper" Type="Folder">
 			<Item Name="Class Tester" Type="Folder">
@@ -69,9 +72,15 @@
 		</Item>
 		<Item Name="Utilities" Type="Folder">
 			<Item Name="apply.all.available.storeDates.vi" Type="VI" URL="../Utilities/apply.all.available.storeDates.vi"/>
+			<Item Name="CLZ_to_ComicVine.lvlib" Type="Library" URL="../CLZ_to_ComicVine/CLZ_to_ComicVine.lvlib"/>
+		</Item>
+		<Item Name="Download Manager" Type="Folder">
+			<Item Name="Download_Manager.lvlib" Type="Library" URL="../Download_Manager/Download_Manager.lvlib"/>
+			<Item Name="ToDos.txt" Type="Document" URL="../Download_Manager/ToDos.txt"/>
 		</Item>
 		<Item Name="Main.Launcher.vi" Type="VI" URL="../Main.Launcher.vi"/>
 		<Item Name="manager_daemon.lvclass" Type="LVClass" URL="../comic_manager/manager_daemon/manager_daemon.lvclass"/>
+		<Item Name="timestamp_string.vi" Type="VI" URL="../../../lib/TimeTools/timestamp_string.vi"/>
 		<Item Name="Package Dependencies" Type="IIO Ladder Diagram">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 		</Item>
@@ -205,21 +214,35 @@
 				<Item Name="Write Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (I64).vi"/>
 				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
 				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
-				<Item Name="lvwebclient_64.dll" Type="Document" URL="/&lt;vilib&gt;/NI/Advanced HTTP Client/lvwebclient_64.dll"/>
+				<Item Name="lvwebclient_32.dll" Type="Document" URL="/&lt;vilib&gt;/NI/Advanced HTTP Client/lvwebclient_32.dll"/>
+				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
+				<Item Name="compatReadText.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatReadText.vi"/>
+				<Item Name="Read File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read File+ (string).vi"/>
+				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
+				<Item Name="Read Lines From File (with error IO).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Lines From File (with error IO).vi"/>
+				<Item Name="Read Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (string).vi"/>
+				<Item Name="Read Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (I64).vi"/>
+				<Item Name="Read Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (DBL).vi"/>
+				<Item Name="Read Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet.vi"/>
 			</Item>
 			<Item Name="GetSubString.vi" Type="VI" URL="../../../lib/StringTools/GetSubString.vi"/>
 			<Item Name="LongDateStringToTimeStamp.vi" Type="VI" URL="../../../lib/StringTools/LongDateStringToTimeStamp.vi"/>
 			<Item Name="MakeSortable.vi" Type="VI" URL="../../../lib/StringTools/MakeSortable.vi"/>
 			<Item Name="remove.invalid.chars.vi" Type="VI" URL="../../../lib/File_Handling/remove.invalid.chars.vi"/>
 			<Item Name="CleanWebCharacters.vi" Type="VI" URL="../../../lib/StringTools/CleanWebCharacters.vi"/>
+			<Item Name="create.yearly.array.vi" Type="VI" URL="../../../lib/TimeTools/create.yearly.array.vi"/>
+			<Item Name="inc.dec.timeframe.vi" Type="VI" URL="../../../lib/TimeTools/inc.dec.timeframe.vi"/>
+			<Item Name="ClearWorkingDirectory.vi" Type="VI" URL="../../../lib/File_Handling/ClearWorkingDirectory.vi"/>
+			<Item Name="Create Log File.vi" Type="VI" URL="../../../lib/Logging/Create Log File.vi"/>
+			<Item Name="Write String to Log.vi" Type="VI" URL="../../../lib/Logging/Write String to Log.vi"/>
+			<Item Name="Write Error to Log.vi" Type="VI" URL="../../../lib/Logging/Write Error to Log.vi"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="System.Web.Extensions" Type="Document" URL="System.Web.Extensions">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="create.yearly.array.vi" Type="VI" URL="../../../lib/TimeTools/create.yearly.array.vi"/>
-			<Item Name="inc.dec.timeframe.vi" Type="VI" URL="../../../lib/TimeTools/inc.dec.timeframe.vi"/>
+			<Item Name="DateString2TimeStamp.vi" Type="VI" URL="../../../lib/TimeTools/DateString2TimeStamp.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
