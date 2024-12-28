@@ -13,13 +13,13 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="subvis" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-		<Item Name="load_full_report.vi" Type="VI" URL="../subvis/load_full_report.vi"/>
 		<Item Name="parse_clz_series.vi" Type="VI" URL="../subvis/parse_clz_series.vi"/>
-		<Item Name="search_cv.vi" Type="VI" URL="../subvis/search_cv.vi"/>
+		<Item Name="read_volume_set.vi" Type="VI" URL="../subvis/read_volume_set.vi"/>
 	</Item>
 	<Item Name="typedefs" Type="Folder">
 		<Item Name="CLZ_comic.ctl" Type="VI" URL="../typedefs/CLZ_comic.ctl"/>
 		<Item Name="CLZ_series.ctl" Type="VI" URL="../typedefs/CLZ_series.ctl"/>
 	</Item>
 	<Item Name="main.vi" Type="VI" URL="../main.vi"/>
+	<Item Name="Volumes.lvclass" Type="LVClass" URL="../Volumes/Volumes.lvclass"/>
 </Library>
