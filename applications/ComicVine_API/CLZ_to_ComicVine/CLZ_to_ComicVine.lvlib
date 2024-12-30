@@ -13,13 +13,16 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="subvis" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+		<Item Name="get_matched_issues.vi" Type="VI" URL="../subvis/get_matched_issues.vi"/>
 		<Item Name="parse_clz_series.vi" Type="VI" URL="../subvis/parse_clz_series.vi"/>
 		<Item Name="read_volume_set.vi" Type="VI" URL="../subvis/read_volume_set.vi"/>
 	</Item>
 	<Item Name="typedefs" Type="Folder">
-		<Item Name="CLZ_comic.ctl" Type="VI" URL="../typedefs/CLZ_comic.ctl"/>
-		<Item Name="CLZ_series.ctl" Type="VI" URL="../typedefs/CLZ_series.ctl"/>
+		<Item Name="CLZ_comic--cluster.ctl" Type="VI" URL="../typedefs/CLZ_comic--cluster.ctl"/>
+		<Item Name="CLZ_series--cluster.ctl" Type="VI" URL="../typedefs/CLZ_series--cluster.ctl"/>
+		<Item Name="paths--cluster.ctl" Type="VI" URL="../typedefs/paths--cluster.ctl"/>
 	</Item>
-	<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-	<Item Name="Volumes.lvclass" Type="LVClass" URL="../Volumes/Volumes.lvclass"/>
+	<Item Name="CLZ Comics.lvclass" Type="LVClass" URL="../CLZ Comics/CLZ Comics.lvclass"/>
+	<Item Name="CV Comics.lvclass" Type="LVClass" URL="../Volumes/CV Comics.lvclass"/>
+	<Item Name="Volume Matcher.vi" Type="VI" URL="../Volume Matcher.vi"/>
 </Library>
