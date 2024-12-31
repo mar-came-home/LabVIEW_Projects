@@ -13,13 +13,20 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="subvis" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+		<Item Name="check_variant.vi" Type="VI" URL="../subvis/check_variant.vi"/>
+		<Item Name="Generate_in-collection_map.vi" Type="VI" URL="../subvis/Generate_in-collection_map.vi"/>
 		<Item Name="get_matched_issues.vi" Type="VI" URL="../subvis/get_matched_issues.vi"/>
 		<Item Name="parse_clz_series.vi" Type="VI" URL="../subvis/parse_clz_series.vi"/>
 		<Item Name="read_volume_set.vi" Type="VI" URL="../subvis/read_volume_set.vi"/>
+		<Item Name="sync_issues.vi" Type="VI" URL="../subvis/sync_issues.vi"/>
 	</Item>
 	<Item Name="typedefs" Type="Folder">
 		<Item Name="CLZ_comic--cluster.ctl" Type="VI" URL="../typedefs/CLZ_comic--cluster.ctl"/>
+		<Item Name="clz_matching_issue--cluster.ctl" Type="VI" URL="../typedefs/clz_matching_issue--cluster.ctl"/>
 		<Item Name="CLZ_series--cluster.ctl" Type="VI" URL="../typedefs/CLZ_series--cluster.ctl"/>
+		<Item Name="issue_match--cluster.ctl" Type="VI" URL="../typedefs/issue_match--cluster.ctl">
+			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+		</Item>
 		<Item Name="paths--cluster.ctl" Type="VI" URL="../typedefs/paths--cluster.ctl"/>
 	</Item>
 	<Item Name="CLZ Comics.lvclass" Type="LVClass" URL="../CLZ Comics/CLZ Comics.lvclass"/>

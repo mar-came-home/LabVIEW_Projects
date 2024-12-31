@@ -11,6 +11,7 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">604012544</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Item Name="collection_status--map.ctl" Type="VI" URL="../../CLZ_to_ComicVine/typedefs/collection_status--map.ctl"/>
 	<Item Name="create.volume.filename.vi" Type="VI" URL="../create.volume.filename.vi"/>
 	<Item Name="graphic.filter--cluster.ctl" Type="VI" URL="../../comic_manager/TypeDefs/graphic.filter--cluster.ctl"/>
 	<Item Name="issue.display--cluster.ctl" Type="VI" URL="../../comic_manager/TypeDefs/issue.display--cluster.ctl"/>
