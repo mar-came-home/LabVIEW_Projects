@@ -16,6 +16,7 @@
 		<Item Name="Testers" Type="Folder">
 			<Item Name="TemplateDaemonTester.vi" Type="VI" URL="../Testers/TemplateDaemonTester.vi"/>
 		</Item>
+		<Item Name="ErrorDaemon.lvclass" Type="LVClass" URL="../ErrorDaemon_class/ErrorDaemon.lvclass"/>
 		<Item Name="Launcher.vi" Type="VI" URL="../Launcher.vi"/>
 		<Item Name="TemplateDaemon.lvclass" Type="LVClass" URL="../TemplateDaemon_class/TemplateDaemon.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
