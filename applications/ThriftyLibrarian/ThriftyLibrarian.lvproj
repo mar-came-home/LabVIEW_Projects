@@ -40,6 +40,8 @@
 		</Item>
 		<Item Name="Testers" Type="Folder">
 			<Item Name="01_CheckRemoteShutdown.vi" Type="VI" URL="../Testers/01_CheckRemoteShutdown.vi"/>
+			<Item Name="02_CheckoutBook.vi" Type="VI" URL="../Testers/02_CheckoutBook.vi"/>
+			<Item Name="flatten_tester.vi" Type="VI" URL="../Testers/flatten_tester.vi"/>
 		</Item>
 		<Item Name="client.lvclass" Type="LVClass" URL="../client_class/client.lvclass"/>
 		<Item Name="librarian.lvclass" Type="LVClass" URL="../librarian_class/librarian.lvclass"/>
@@ -50,7 +52,6 @@
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
-				<Item Name="Create NI GUID.vi" Type="VI" URL="/&lt;vilib&gt;/string/Create NI GUID.vi"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
@@ -91,6 +92,9 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="ole32.dll" Type="Document" URL="ole32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
