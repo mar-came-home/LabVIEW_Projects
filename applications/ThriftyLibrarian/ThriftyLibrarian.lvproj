@@ -39,9 +39,14 @@
 			<Item Name="SHA256_hash.vi" Type="VI" URL="../shared/SHA256_hash.vi"/>
 		</Item>
 		<Item Name="Testers" Type="Folder">
-			<Item Name="01_CheckRemoteShutdown.vi" Type="VI" URL="../Testers/01_CheckRemoteShutdown.vi"/>
-			<Item Name="02_CheckoutBook.vi" Type="VI" URL="../Testers/02_CheckoutBook.vi"/>
 			<Item Name="flatten_tester.vi" Type="VI" URL="../Testers/flatten_tester.vi"/>
+			<Item Name="Simulation-01.vi" Type="VI" URL="../Testers/Simulation-01.vi"/>
+			<Item Name="Simulation-02.vi" Type="VI" URL="../Testers/Simulation-02.vi"/>
+			<Item Name="Simulation-03.vi" Type="VI" URL="../Testers/Simulation-03.vi"/>
+			<Item Name="Simulation-04.vi" Type="VI" URL="../Testers/Simulation-04.vi"/>
+			<Item Name="Simulation-05.vi" Type="VI" URL="../Testers/Simulation-05.vi"/>
+			<Item Name="Simulation-06.vi" Type="VI" URL="../Testers/Simulation-06.vi"/>
+			<Item Name="Simulation-07.vi" Type="VI" URL="../Testers/Simulation-07.vi"/>
 		</Item>
 		<Item Name="client.lvclass" Type="LVClass" URL="../client_class/client.lvclass"/>
 		<Item Name="librarian.lvclass" Type="LVClass" URL="../librarian_class/librarian.lvclass"/>
