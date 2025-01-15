@@ -16,6 +16,7 @@
 	<Item Name="graphic.filter--cluster.ctl" Type="VI" URL="../../comic_manager/TypeDefs/graphic.filter--cluster.ctl"/>
 	<Item Name="issue.display--cluster.ctl" Type="VI" URL="../../comic_manager/TypeDefs/issue.display--cluster.ctl"/>
 	<Item Name="open.local.issue.file.vi" Type="VI" URL="../open.local.issue.file.vi"/>
+	<Item Name="open.local.publisher.file.vi" Type="VI" URL="../open.local.publisher.file.vi"/>
 	<Item Name="open.local.volume.file.vi" Type="VI" URL="../open.local.volume.file.vi"/>
 	<Item Name="read.issue_ids.from.volume.vi" Type="VI" URL="../read.issue_ids.from.volume.vi"/>
 	<Item Name="volume.object--cluster.ctl" Type="VI" URL="../volume.object--cluster.ctl"/>

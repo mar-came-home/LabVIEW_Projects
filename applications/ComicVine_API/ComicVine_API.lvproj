@@ -74,6 +74,7 @@
 		<Item Name="Utilities" Type="Folder">
 			<Item Name="apply.all.available.storeDates.vi" Type="VI" URL="../Utilities/apply.all.available.storeDates.vi"/>
 			<Item Name="CLZ_to_ComicVine.lvlib" Type="Library" URL="../CLZ_to_ComicVine/CLZ_to_ComicVine.lvlib"/>
+			<Item Name="Publisher Explorer.vi" Type="VI" URL="../Utilities/Publisher Explorer.vi"/>
 		</Item>
 		<Item Name="Download Manager" Type="Folder">
 			<Item Name="Download_Manager.lvlib" Type="Library" URL="../Download_Manager/Download_Manager.lvlib"/>
@@ -82,6 +83,7 @@
 		<Item Name="Main.Launcher.vi" Type="VI" URL="../Main.Launcher.vi"/>
 		<Item Name="manager_daemon.lvclass" Type="LVClass" URL="../comic_manager/manager_daemon/manager_daemon.lvclass"/>
 		<Item Name="timestamp_string.vi" Type="VI" URL="../../../lib/TimeTools/timestamp_string.vi"/>
+		<Item Name="get missing volumes.vi" Type="VI" URL="../Utilities/get missing volumes.vi"/>
 		<Item Name="Package Dependencies" Type="IIO Ladder Diagram">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 		</Item>

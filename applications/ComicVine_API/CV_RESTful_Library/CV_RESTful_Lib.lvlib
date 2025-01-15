@@ -45,6 +45,7 @@
 	<Item Name="cv.to.local_team.vi" Type="VI" URL="../cv.to.local_team.vi"/>
 	<Item Name="cv.to.local_volume.vi" Type="VI" URL="../cv.to.local_volume.vi"/>
 	<Item Name="GET_ALL_ISSUES.vi" Type="VI" URL="../GET_ALL_ISSUES.vi"/>
+	<Item Name="GET_all_publishers.vi" Type="VI" URL="../GET_all_publishers.vi"/>
 	<Item Name="GET_character_by_id.vi" Type="VI" URL="../GET_character_by_id.vi"/>
 	<Item Name="GET_issue_by_id.vi" Type="VI" URL="../GET_issue_by_id.vi"/>
 	<Item Name="GET_issue_lastupdates_by_ids.vi" Type="VI" URL="../GET_issue_lastupdates_by_ids.vi"/>
