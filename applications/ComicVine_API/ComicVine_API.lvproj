@@ -14,76 +14,83 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Libraries" Type="Folder">
-			<Item Name="CV_Shared_Library.lvlib" Type="Library" URL="../CV_Shared_Library/CV_Shared_Library.lvlib"/>
-			<Item Name="CV_RESTful_Lib.lvlib" Type="Library" URL="../CV_RESTful_Library/CV_RESTful_Lib.lvlib"/>
+			<Item Name="CV_Shared_Library.lvlib" Type="Library" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/CV_Shared_Library/CV_Shared_Library.lvlib"/>
+			<Item Name="CV_RESTful_Lib.lvlib" Type="Library" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/CV_RESTful_Library/CV_RESTful_Lib.lvlib"/>
 		</Item>
 		<Item Name="Editor_UI" Type="Folder">
 			<Item Name="subvis" Type="Folder">
-				<Item Name="plot.issues.vi" Type="VI" URL="../Manager_UI/subvis/plot.issues.vi"/>
-				<Item Name="sort.volume.issues.vi" Type="VI" URL="../Manager_UI/subvis/sort.volume.issues.vi"/>
-				<Item Name="interpolate.issue.dates.vi" Type="VI" URL="../Manager_UI/subvis/interpolate.issue.dates.vi"/>
-				<Item Name="update_issue_cover_date.vi" Type="VI" URL="../Manager_UI/subvis/update_issue_cover_date.vi"/>
+				<Item Name="plot.issues.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Manager_UI/subvis/plot.issues.vi"/>
+				<Item Name="sort.volume.issues.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Manager_UI/subvis/sort.volume.issues.vi"/>
+				<Item Name="interpolate.issue.dates.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Manager_UI/subvis/interpolate.issue.dates.vi"/>
+				<Item Name="update_issue_display_date.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Manager_UI/subvis/update_issue_display_date.vi"/>
+				<Item Name="fix_issue_dates.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Manager_UI/subvis/fix_issue_dates.vi"/>
 			</Item>
-			<Item Name="Editor_UI_Main.vi" Type="VI" URL="../Manager_UI/Editor_UI_Main.vi"/>
+			<Item Name="Editor_UI_Main.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Manager_UI/Editor_UI_Main.vi"/>
 		</Item>
 		<Item Name="Graphic UI" Type="Folder">
 			<Item Name="definitions" Type="Folder">
-				<Item Name="picture.data--cluster.ctl" Type="VI" URL="../Graphic_UI/typedefs/picture.data--cluster.ctl"/>
-				<Item Name="volume.type.colors--cluster.ctl" Type="VI" URL="../Graphic_UI/typedefs/volume.type.colors--cluster.ctl"/>
+				<Item Name="picture.data--cluster.ctl" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Graphic_UI/typedefs/picture.data--cluster.ctl"/>
+				<Item Name="volume.type.colors--cluster.ctl" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Graphic_UI/typedefs/volume.type.colors--cluster.ctl"/>
+				<Item Name="filters--cluster.ctl" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Graphic_UI/typedefs/filters--cluster.ctl"/>
 			</Item>
 			<Item Name="subvi&apos;s" Type="Folder">
-				<Item Name="sort.volumes.vi" Type="VI" URL="../Graphic_UI/subvis/sort.volumes.vi"/>
-				<Item Name="create.grid.vi" Type="VI" URL="../Graphic_UI/subvis/create.grid.vi"/>
-				<Item Name="selections.load.binaries.vi" Type="VI" URL="../Graphic_UI/subvis/selections.load.binaries.vi"/>
-				<Item Name="plot.volumes.vi" Type="VI" URL="../Graphic_UI/subvis/plot.volumes.vi"/>
-				<Item Name="sort.by.volume.type.vi" Type="VI" URL="../Graphic_UI/subvis/sort.by.volume.type.vi"/>
-				<Item Name="resize.navigation.pane.vi" Type="VI" URL="../Graphic_UI/subvis/resize.navigation.pane.vi"/>
+				<Item Name="sort.volumes.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Graphic_UI/subvis/sort.volumes.vi"/>
+				<Item Name="create.grid.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Graphic_UI/subvis/create.grid.vi"/>
+				<Item Name="selections.load.binaries.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Graphic_UI/subvis/selections.load.binaries.vi"/>
+				<Item Name="plot.volumes.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Graphic_UI/subvis/plot.volumes.vi"/>
+				<Item Name="sort.by.volume.type.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Graphic_UI/subvis/sort.by.volume.type.vi"/>
+				<Item Name="resize.navigation.pane.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Graphic_UI/subvis/resize.navigation.pane.vi"/>
+				<Item Name="advanced.filter.dialog.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Graphic_UI/subvis/advanced.filter.dialog.vi"/>
 			</Item>
 			<Item Name="Report Generator" Type="Folder">
-				<Item Name="build.from.objects.vi" Type="VI" URL="../Graphic_UI/report_generator/build.from.objects.vi"/>
-				<Item Name="Report Generator.vi" Type="VI" URL="../Graphic_UI/report_generator/Report Generator.vi"/>
-				<Item Name="report.issue--cluster.ctl" Type="VI" URL="../Graphic_UI/report_generator/report.issue--cluster.ctl"/>
+				<Item Name="build.from.objects.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Graphic_UI/report_generator/build.from.objects.vi"/>
+				<Item Name="Report Generator.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Graphic_UI/report_generator/Report Generator.vi"/>
+				<Item Name="report.issue--cluster.ctl" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Graphic_UI/report_generator/report.issue--cluster.ctl"/>
 			</Item>
-			<Item Name="Graphic_UI_Main.vi" Type="VI" URL="../Graphic_UI/Graphic_UI_Main.vi"/>
-			<Item Name="selection_dropdown.lvclass" Type="LVClass" URL="../selection_dropdown/selection_dropdown.lvclass"/>
+			<Item Name="Graphic_UI_Main.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Graphic_UI/Graphic_UI_Main.vi"/>
+			<Item Name="selection_dropdown.lvclass" Type="LVClass" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/selection_dropdown/selection_dropdown.lvclass"/>
 		</Item>
 		<Item Name="testers" Type="Folder">
-			<Item Name="series_parser_tester.vi" Type="VI" URL="../class_testers/series_parser_tester.vi"/>
-			<Item Name="web scraper to API converter.vi" Type="VI" URL="../class_testers/web scraper to API converter.vi"/>
-			<Item Name="selection.tester.vi" Type="VI" URL="../class_testers/selection.tester.vi"/>
-			<Item Name="Get all issues from CV.vi" Type="VI" URL="../class_testers/Get all issues from CV.vi"/>
-			<Item Name="get single issue via cv_api.vi" Type="VI" URL="../class_testers/get single issue via cv_api.vi"/>
-			<Item Name="get range of comic last_updates.vi" Type="VI" URL="../class_testers/get range of comic last_updates.vi"/>
-			<Item Name="log_tester.vi" Type="VI" URL="../class_testers/log_tester.vi"/>
+			<Item Name="series_parser_tester.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/class_testers/series_parser_tester.vi"/>
+			<Item Name="web scraper to API converter.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/class_testers/web scraper to API converter.vi"/>
+			<Item Name="selection.tester.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/class_testers/selection.tester.vi"/>
+			<Item Name="Get all issues from CV.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/class_testers/Get all issues from CV.vi"/>
+			<Item Name="get single issue via cv_api.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/class_testers/get single issue via cv_api.vi"/>
+			<Item Name="get range of comic last_updates.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/class_testers/get range of comic last_updates.vi"/>
+			<Item Name="log_tester.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/class_testers/log_tester.vi"/>
 		</Item>
 		<Item Name="WebScraper" Type="Folder">
 			<Item Name="Class Tester" Type="Folder">
-				<Item Name="Downloader.vi" Type="VI" URL="../WebScraper/Testers/Downloader.vi"/>
-				<Item Name="issue_parser_tester.vi" Type="VI" URL="../WebScraper/Testers/issue_parser_tester.vi"/>
-				<Item Name="top_level.vi" Type="VI" URL="../WebScraper/Testers/top_level.vi"/>
+				<Item Name="Downloader.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/WebScraper/Testers/Downloader.vi"/>
+				<Item Name="issue_parser_tester.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/WebScraper/Testers/issue_parser_tester.vi"/>
+				<Item Name="top_level.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/WebScraper/Testers/top_level.vi"/>
 			</Item>
-			<Item Name="comic_class.lvclass" Type="LVClass" URL="../WebScraper/comic_class/comic_class.lvclass"/>
-			<Item Name="issue_class.lvclass" Type="LVClass" URL="../WebScraper/issue_class/issue_class.lvclass"/>
-			<Item Name="series_class.lvclass" Type="LVClass" URL="../WebScraper/series_class/series_class.lvclass"/>
+			<Item Name="comic_class.lvclass" Type="LVClass" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/WebScraper/comic_class/comic_class.lvclass"/>
+			<Item Name="issue_class.lvclass" Type="LVClass" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/WebScraper/issue_class/issue_class.lvclass"/>
+			<Item Name="series_class.lvclass" Type="LVClass" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/WebScraper/series_class/series_class.lvclass"/>
 		</Item>
 		<Item Name="Crawler" Type="Folder">
-			<Item Name="Comic_Crawler_Main_UI.vi" Type="VI" URL="../Crawler/Comic_Crawler_Main_UI.vi"/>
-			<Item Name="CV_downloader.lvclass" Type="LVClass" URL="../CV_downloader/CV_downloader.lvclass"/>
-			<Item Name="comic_crawler.lvclass" Type="LVClass" URL="../Crawler/comic_crawler_class/comic_crawler.lvclass"/>
+			<Item Name="Comic_Crawler_Main_UI.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Crawler/Comic_Crawler_Main_UI.vi"/>
+			<Item Name="CV_downloader.lvclass" Type="LVClass" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/CV_downloader/CV_downloader.lvclass"/>
+			<Item Name="comic_crawler.lvclass" Type="LVClass" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Crawler/comic_crawler_class/comic_crawler.lvclass"/>
 		</Item>
 		<Item Name="Utilities" Type="Folder">
-			<Item Name="apply.all.available.storeDates.vi" Type="VI" URL="../Utilities/apply.all.available.storeDates.vi"/>
-			<Item Name="CLZ_to_ComicVine.lvlib" Type="Library" URL="../CLZ_to_ComicVine/CLZ_to_ComicVine.lvlib"/>
-			<Item Name="Publisher Explorer.vi" Type="VI" URL="../Utilities/Publisher Explorer.vi"/>
+			<Item Name="apply.all.available.storeDates.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Utilities/apply.all.available.storeDates.vi"/>
+			<Item Name="CLZ_to_ComicVine.lvlib" Type="Library" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/CLZ_to_ComicVine/CLZ_to_ComicVine.lvlib"/>
+			<Item Name="Publisher Explorer.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Utilities/Publisher Explorer.vi"/>
+			<Item Name="DateChecker.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Utilities/DateChecker.vi"/>
+			<Item Name="PlotReleaseByYear.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Utilities/PlotReleaseByYear.vi"/>
+			<Item Name="apply.all.display_dates.with.cover_date.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Utilities/apply.all.display_dates.with.cover_date.vi"/>
 		</Item>
 		<Item Name="Download Manager" Type="Folder">
-			<Item Name="Download_Manager.lvlib" Type="Library" URL="../Download_Manager/Download_Manager.lvlib"/>
-			<Item Name="ToDos.txt" Type="Document" URL="../Download_Manager/ToDos.txt"/>
+			<Item Name="Download_Manager.lvlib" Type="Library" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Download_Manager/Download_Manager.lvlib"/>
+			<Item Name="ToDos.txt" Type="Document" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Download_Manager/ToDos.txt"/>
 		</Item>
-		<Item Name="Main.Launcher.vi" Type="VI" URL="../Main.Launcher.vi"/>
-		<Item Name="manager_daemon.lvclass" Type="LVClass" URL="../comic_manager/manager_daemon/manager_daemon.lvclass"/>
-		<Item Name="timestamp_string.vi" Type="VI" URL="../../../lib/TimeTools/timestamp_string.vi"/>
-		<Item Name="get missing volumes.vi" Type="VI" URL="../Utilities/get missing volumes.vi"/>
+		<Item Name="Main.Launcher.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Main.Launcher.vi"/>
+		<Item Name="manager_daemon.lvclass" Type="LVClass" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/comic_manager/manager_daemon/manager_daemon.lvclass"/>
+		<Item Name="timestamp_string.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/lib/TimeTools/timestamp_string.vi"/>
+		<Item Name="get missing volumes.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/ComicVine_API/Utilities/get missing volumes.vi"/>
+		<Item Name="Lesson 1- booleans.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/applications/Tutorial/Lesson 1- booleans.vi"/>
 		<Item Name="Package Dependencies" Type="IIO Ladder Diagram">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 		</Item>
@@ -230,19 +237,19 @@
 				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
 				<Item Name="lvwebclient_32.dll" Type="Document" URL="/&lt;vilib&gt;/NI/Advanced HTTP Client/lvwebclient_32.dll"/>
 			</Item>
-			<Item Name="GetSubString.vi" Type="VI" URL="../../../lib/StringTools/GetSubString.vi"/>
-			<Item Name="LongDateStringToTimeStamp.vi" Type="VI" URL="../../../lib/StringTools/LongDateStringToTimeStamp.vi"/>
-			<Item Name="MakeSortable.vi" Type="VI" URL="../../../lib/StringTools/MakeSortable.vi"/>
-			<Item Name="remove.invalid.chars.vi" Type="VI" URL="../../../lib/File_Handling/remove.invalid.chars.vi"/>
-			<Item Name="CleanWebCharacters.vi" Type="VI" URL="../../../lib/StringTools/CleanWebCharacters.vi"/>
-			<Item Name="create.yearly.array.vi" Type="VI" URL="../../../lib/TimeTools/create.yearly.array.vi"/>
-			<Item Name="inc.dec.timeframe.vi" Type="VI" URL="../../../lib/TimeTools/inc.dec.timeframe.vi"/>
-			<Item Name="ClearWorkingDirectory.vi" Type="VI" URL="../../../lib/File_Handling/ClearWorkingDirectory.vi"/>
-			<Item Name="Create Log File.vi" Type="VI" URL="../../../lib/Logging/Create Log File.vi"/>
-			<Item Name="Write String to Log.vi" Type="VI" URL="../../../lib/Logging/Write String to Log.vi"/>
-			<Item Name="Write Error to Log.vi" Type="VI" URL="../../../lib/Logging/Write Error to Log.vi"/>
-			<Item Name="FindLastWednesday.vi" Type="VI" URL="../../../lib/TimeTools/FindLastWednesday.vi"/>
-			<Item Name="StripTimeFromTimeStamp.vi" Type="VI" URL="../../../lib/TimeTools/StripTimeFromTimeStamp.vi"/>
+			<Item Name="GetSubString.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/lib/StringTools/GetSubString.vi"/>
+			<Item Name="LongDateStringToTimeStamp.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/lib/StringTools/LongDateStringToTimeStamp.vi"/>
+			<Item Name="MakeSortable.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/lib/StringTools/MakeSortable.vi"/>
+			<Item Name="remove.invalid.chars.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/lib/File_Handling/remove.invalid.chars.vi"/>
+			<Item Name="CleanWebCharacters.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/lib/StringTools/CleanWebCharacters.vi"/>
+			<Item Name="create.yearly.array.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/lib/TimeTools/create.yearly.array.vi"/>
+			<Item Name="inc.dec.timeframe.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/lib/TimeTools/inc.dec.timeframe.vi"/>
+			<Item Name="ClearWorkingDirectory.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/lib/File_Handling/ClearWorkingDirectory.vi"/>
+			<Item Name="Create Log File.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/lib/Logging/Create Log File.vi"/>
+			<Item Name="Write String to Log.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/lib/Logging/Write String to Log.vi"/>
+			<Item Name="Write Error to Log.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/lib/Logging/Write Error to Log.vi"/>
+			<Item Name="FindLastWednesday.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/lib/TimeTools/FindLastWednesday.vi"/>
+			<Item Name="StripTimeFromTimeStamp.vi" Type="VI" URL="/C/Code/LabVIEW_Projects/lib/TimeTools/StripTimeFromTimeStamp.vi"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
