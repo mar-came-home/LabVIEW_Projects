@@ -1,0 +1,12 @@
+{
+    "publisher map path":"D:\\Comics\\data\\key_maps\\publishers.bin",
+    "issue map path":"D:\\Comics\\data\\key_maps\\issues.bin",
+    "char map path":"D:\\Comics\\data\\key_maps\\chars.bin",
+    "concept map path":"D:\\Comics\\data\\key_maps\\concepts.bin",
+    "story map path":"D:\\Comics\\data\\key_maps\\storys.bin",
+    "team map path":"D:\\Comics\\data\\key_maps\\teams.bin",
+    "volume map path":"D:\\Comics\\data\\key_maps\\volumes.bin",
+    "creators map path":"D:\\Comics\\data\\key_maps\\creators.bin",
+    "volumes path":"D:\\Comics\\data\\cv_volumes",
+    "issues path":"D:\\Comics\\data\\cv_issues"
+}

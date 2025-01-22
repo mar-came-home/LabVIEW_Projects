@@ -1,0 +1,15 @@
+Got hung up on generating the UUID with Call Library Node.  Could have used .NET but it was easier for the time being to just drop the Create NI GUID.vi with the intent to return back.
+
+Full daemon framework is setup for Librarian. The intent is to use User Events to control for testing and launch asynchronously
+* Add close ClientID after TCP exchange is complete and go back to listening for more requests
+
+Ran out of time for building client so left comments for logic needed.
+* Need to use similar framework on client as used for librarian to include User Event messaging for remote control for CHECKIN and CHECKOUT and DAMAGE functions
+*  
+
+Still need to create a Tester application to launch client(s) and librarian asynchronously and execute testing for
+* single client checkin and checkout 
+* single client checkout and checkout (banned)
+* single client checkout, damage, checkin (banned)
+* multiple clients attempt to checkout same book (should be unavailable to second client)
+* and that darned challenge for Count of Monte Christo
