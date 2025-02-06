@@ -86,6 +86,9 @@
 			<Item Name="Download_Manager.lvlib" Type="Library" URL="../Download_Manager/Download_Manager.lvlib"/>
 			<Item Name="ToDos.txt" Type="Document" URL="../Download_Manager/ToDos.txt"/>
 		</Item>
+		<Item Name="SearchUtility" Type="Folder">
+			<Item Name="SearchUtility.lvlib" Type="Library" URL="../SearchUtility/SearchUtility.lvlib"/>
+		</Item>
 		<Item Name="Main.Launcher.vi" Type="VI" URL="../Main.Launcher.vi"/>
 		<Item Name="manager_daemon.lvclass" Type="LVClass" URL="../comic_manager/manager_daemon/manager_daemon.lvclass"/>
 		<Item Name="timestamp_string.vi" Type="VI" URL="../../../lib/TimeTools/timestamp_string.vi"/>

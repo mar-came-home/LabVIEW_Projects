@@ -31,6 +31,8 @@
 		<Item Name="cv_volume.issue--cluster.ctl" Type="VI" URL="../typedefs/cv_volume.issue--cluster.ctl"/>
 		<Item Name="cv_volume.publisher--cluster.ctl" Type="VI" URL="../typedefs/cv_volume.publisher--cluster.ctl"/>
 		<Item Name="cv_volume.results--cluster.ctl" Type="VI" URL="../typedefs/cv_volume.results--cluster.ctl"/>
+		<Item Name="cv_volume.search--cluster.ctl" Type="VI" URL="../typedefs/cv_volume.search--cluster.ctl"/>
+		<Item Name="cv_volume.search.results--cluster.ctl" Type="VI" URL="../typedefs/cv_volume.search.results--cluster.ctl"/>
 		<Item Name="local_character--cluster.ctl" Type="VI" URL="../typedefs/local_character--cluster.ctl"/>
 		<Item Name="local_issue--cluster.ctl" Type="VI" URL="../typedefs/local_issue--cluster.ctl"/>
 		<Item Name="local_publisher--cluster.ctl" Type="VI" URL="../typedefs/local_publisher--cluster.ctl"/>
@@ -55,4 +57,5 @@
 	<Item Name="GET_volume_by_id.vi" Type="VI" URL="../GET_volume_by_id.vi"/>
 	<Item Name="GET_volume_last_update.vi" Type="VI" URL="../GET_volume_last_update.vi"/>
 	<Item Name="Open_RESTful_connection.vi" Type="VI" URL="../Open_RESTful_connection.vi"/>
+	<Item Name="SEARCH_volumes.vi" Type="VI" URL="../SEARCH_volumes.vi"/>
 </Library>
