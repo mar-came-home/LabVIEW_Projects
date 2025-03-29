@@ -1,3 +1,19 @@
 [project]
 labview-version = 2000
 vipc = ""
+
+[nipm]
+
+[vipm]
+
+[vipm.dependencies]
+mgi_lib_1d_array = "1.0.2.3"
+mgi_lib_timing = "1.1.0.2"
+oglib_array = "6.0.1.20"
+oglib_file = "6.0.2.28"
+oglib_string = "6.0.2.35"
+jki_lib_state_machine = "2024.0.1.13"
+jki_lib_rest_client = "2.1.0.34"
+jki_lib_json_serialization = "2.1.0.44"
+ni_lib_advanced_http_client_api = "1.1.0.6"
+sklein_lib_webview2 = "1.5.0.3"
